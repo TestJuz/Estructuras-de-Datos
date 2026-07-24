@@ -27,6 +27,17 @@ class LinkedList:
             current = current.next #Navegacion entre nodos 
         print("None")
 
+    def AddInFront(self,data):
+        new_node = node(data)
+        if(self.head is None):
+            self.head = new_node
+            return 
+        current = self.head #Toma el primero backup
+        self.head = node(data) # Cambia el valor primero al nuevo
+        self.head.next = current
+        
+
+
 lista1 = LinkedList()
 lista1.insert(10)
 lista1.insert(20)
@@ -34,6 +45,7 @@ lista1.insert(30)
 lista1.insert(40)
 lista1.insert(50)
 lista1.insert(60)
+lista1.AddInFront(0)
 
 lista1.display() #muestra la lista
 
