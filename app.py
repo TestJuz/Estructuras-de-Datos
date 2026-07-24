@@ -35,6 +35,31 @@ class LinkedList:
         current = self.head #Toma el primero backup
         self.head = node(data) # Cambia el valor primero al nuevo
         self.head.next = current
+
+    def GetSize(self):
+        current = self.head
+        count = int(0)
+        while(current): #Recorre los nodos
+            current = current.next #Navegacion entre nodos 
+            count=count+1 #Suma para saber la cantidad de datos que hay
+        return count # Retorna el tamanio
+        
+
+    def AddinMiddle(self,data):
+        current = self.head
+        new_node = node(data)
+         
+        size = int(self.GetSize()/2) # la mitad relativa de la lista
+
+        while(size > 0): #Recorre los nodos hasta el medio
+            current = current.next
+            size = size -1 
+
+        new_node.next = current.next # El nuevo nodo ahora tiene el valor siguiente que tenia el viejo medio
+        current.next = new_node # El viejo medio ahora apunta al nuevo medio
+
+
+
         
 
 
@@ -42,10 +67,9 @@ lista1 = LinkedList()
 lista1.insert(10)
 lista1.insert(20)
 lista1.insert(30)
-lista1.insert(40)
 lista1.insert(50)
 lista1.insert(60)
 lista1.AddInFront(0)
-
+lista1.AddinMiddle(40)
 lista1.display() #muestra la lista
 
