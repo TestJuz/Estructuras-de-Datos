@@ -80,12 +80,30 @@ class LinkedList:
         # Saltar el nodo que se desea eliminar
         actual.next = actual.next.next
     
-    def eliminarAlInicio(self):
+    def eliminarAlhead(self):
         if self.head is None:
             print("La lista está vacía.")
             return
         actual = self.head
         self.head = actual.next
+
+    def eliminarAlFinal(self):
+
+        if self.head is None:
+            print("La lista está vacía.")
+            return
+
+        if self.head.next is None:
+            self.head = None
+            return
+
+        actual = self.head
+
+        while actual.next.next is not None:
+            actual = actual.next
+
+        actual.next = None
+
         
 
 
@@ -110,8 +128,13 @@ lista1.display() #muestra la lista
 print("eliminar el medio")
 lista1.eliminarEnPosicion(3)
 lista1.display() #muestra la lista
-print("eliminar al inicio")
-lista1.eliminarAlInicio()
+print("eliminar al head")
+lista1.eliminarAlhead()
 lista1.display() #muestra la lista
+print("eliminar al final")
+lista1.eliminarAlFinal()
+lista1.display() #muestra la lista
+
+
 
 
