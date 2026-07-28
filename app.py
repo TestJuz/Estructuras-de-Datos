@@ -58,6 +58,36 @@ class LinkedList:
         new_node.next = current.next # El nuevo nodo ahora tiene el valor siguiente que tenia el viejo medio
         current.next = new_node # El viejo medio ahora apunta al nuevo medio
 
+    def eliminarEnPosicion(self,posicion):
+        # Lista vacía
+        if self.head is None:
+            print("La lista está vacía.")
+            return
+        # Eliminar el primer nodo
+        if posicion == 0:
+            self.head = self.head.next
+            return
+        actual = self.head
+        contador = 0
+        # Buscar el nodo anterior a la posición
+        while actual.next is not None and contador < posicion - 1:
+            actual = actual.next
+            contador += 1
+        # Verificar si la posición existe
+        if actual.next is None:
+            print("Posición fuera de rango.")
+            return
+        # Saltar el nodo que se desea eliminar
+        actual.next = actual.next.next
+    
+    def eliminarAlInicio(self):
+        if self.head is None:
+            print("La lista está vacía.")
+            return
+        actual = self.head
+        self.head = actual.next
+        
+
 
 
         
@@ -77,4 +107,11 @@ lista1.display() #muestra la lista
 print("Insertar al Medio")
 lista1.AddinMiddle(40)
 lista1.display() #muestra la lista
+print("eliminar el medio")
+lista1.eliminarEnPosicion(3)
+lista1.display() #muestra la lista
+print("eliminar al inicio")
+lista1.eliminarAlInicio()
+lista1.display() #muestra la lista
+
 
