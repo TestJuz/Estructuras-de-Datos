@@ -1,3 +1,4 @@
+import os
 class node:
     def __init__(self,data):
         self.data = data # Valor
@@ -49,7 +50,7 @@ class LinkedList:
         current = self.head
         new_node = node(data)
          
-        size = int(self.GetSize()/2) # la mitad relativa de la lista
+        size = int(self.GetSize()/2-1) # la mitad relativa de la lista
 
         while(size > 0): #Recorre los nodos hasta el medio
             current = current.next
@@ -104,7 +105,29 @@ class LinkedList:
 
         actual.next = None
 
+    def DeterminarVacio(self):  
+        if self.head is None:
+                print("La lista está vacía.")
+                return  
         
+        print("La lista no esta vacia")
+        return
+
+    def BuscarElemento(self,data):
+        current = self.head
+        contador = 0
+        while( current): #Recorre los nodos hasta el medio
+            if(current.data == data):
+                print("encontrado en posicion: " + str(contador+1))
+                return
+            current = current.next
+            contador = contador + 1
+        
+        print("elemento no encontrado")
+        return
+
+
+
 
 
 
@@ -112,29 +135,72 @@ class LinkedList:
 
 
 lista1 = LinkedList()
-lista1.insert(10)
-lista1.insert(20)
-lista1.insert(30)
-lista1.insert(50)
-lista1.insert(60)
-print("Lista de 0 a 60 sin 40")
-lista1.display() #muestra la lista
-print("Insertar al frente")
-lista1.AddInFront(0)
-lista1.display() #muestra la lista
-print("Insertar al Medio")
-lista1.AddinMiddle(40)
-lista1.display() #muestra la lista
-print("eliminar el medio")
-lista1.eliminarEnPosicion(3)
-lista1.display() #muestra la lista
-print("eliminar al head")
-lista1.eliminarAlhead()
-lista1.display() #muestra la lista
-print("eliminar al final")
-lista1.eliminarAlFinal()
-lista1.display() #muestra la lista
 
 
+opcion = 0
+
+while(opcion != 8): 
+
+    if os.name == "nt":
+        os.system("cls")
+    else:
+        os.system("clear")
+    print("----------------------------------")
+    print("Ingrese una opcion")
+    print("0- Determinar si lista esta vacia")
+    print("1- Imprimir lista")
+    print("2- insertar un numero al inicio")
+    print("3- insertar un numero al medio")
+    print("4- Insertar un numero al final")
+    print("5- Eliminar numero al inicio")
+    print("6- Eliminar numero el numero en una posicion")
+    print("7- Eliminar numero al final")
+    print("8 - Salir")
+    print("----------------------------------")
+    opcion = int(input("Ingrese una opcion: "))
+
+    match opcion:
+        case 0:
+            lista1.DeterminarVacio()
+            input("Presione una tecla para continuar")
+        case 1:
+            lista1.display()
+            input("Presione una tecla para continuar")
+        case 2:
+            opcion = int(input("Ingrese el numero a insertar: "))
+            lista1.AddInFront(int(opcion))
+            lista1.display()
+            input("Presione una tecla para continuar")
+        case 3:
+            opcion = int(input("Ingrese el numero a insertar: "))
+            lista1.AddinMiddle(int(opcion))
+            lista1.display()
+            input("Presione una tecla para continuar")
+        case 4:
+            opcion = int(input("Ingrese el numero a insertar: "))
+            lista1.insert(opcion)
+            lista1.display()
+            input("Presione una tecla para continuar")
+        case 5: 
+            lista1.eliminarAlhead()
+            lista1.display()
+            input("Presione una tecla para continuar")
+        case 6:
+            lista1.display()
+            opcion = int(input("Ingrese la posicion a eliminar: "))
+            lista1.eliminarEnPosicion(opcion)
+            lista1.display()
+            input("Presione una tecla para continuar")
+        case 7:
+            lista1.eliminarAlFinal()
+            lista1.display()
+            input("Presione una tecla para continuar")
+        case 8:
+            exit
+        case _:
+            print("Opcion no valida")
+            input("Presione una tecla para continuar")
+
+            
 
 
