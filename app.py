@@ -69,7 +69,12 @@ lista1.insert(20)
 lista1.insert(30)
 lista1.insert(50)
 lista1.insert(60)
+print("Lista de 10 a 60 sin 40")
+lista1.display() #muestra la lista
+print("Insertar al frente")
 lista1.AddInFront(0)
+lista1.display() #muestra la lista
+print("Insertar al Medio")
 lista1.AddinMiddle(40)
 lista1.display() #muestra la lista
 
