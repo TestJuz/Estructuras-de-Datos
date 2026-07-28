@@ -149,15 +149,21 @@ while(opcion != 8):
     print("Ingrese una opcion")
     print("0- Determinar si lista esta vacia")
     print("1- Imprimir lista")
-    print("2- insertar un numero al inicio")
-    print("3- insertar un numero al medio")
+    print("2- Insertar un numero al inicio")
+    print("3- Insertar un numero al medio")
     print("4- Insertar un numero al final")
     print("5- Eliminar numero al inicio")
     print("6- Eliminar numero el numero en una posicion")
     print("7- Eliminar numero al final")
-    print("8 - Salir")
+    print("8- Salir")
     print("----------------------------------")
-    opcion = int(input("Ingrese una opcion: "))
+
+
+    opcion = input("Ingrese una opcion: ")
+    if opcion == "":
+        opcion = int(9)
+    else:
+        opcion = int(opcion)
 
     match opcion:
         case 0:
