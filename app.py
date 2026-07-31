@@ -202,6 +202,11 @@ while(opcion != 8):
             lista1.display()
             input("Presione una tecla para continuar")
         case 8:
+            opcion = int(input("Ingrese un numero para buscar: "))
+            lista1.BuscarElemento(opcion)
+            input("Presione una tecla para continuar")
+
+        case 9: 
             exit
         case _:
             print("Opcion no valida")
