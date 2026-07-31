@@ -42,7 +42,7 @@ class LinkedList:
         count = int(0)
         while(current): #Recorre los nodos
             current = current.next #Navegacion entre nodos 
-            count=count+1 #Suma para saber la cantidad de datos que hay
+            count+=count #Suma para saber la cantidad de datos que hay
         return count # Retorna el tamanio
         
 
@@ -160,10 +160,10 @@ while(opcion != 8):
 
 
     opcion = input("Ingrese una opcion: ")
-    if opcion == "":
-        opcion = int(9)
-    else:
+    try:
         opcion = int(opcion)
+    except ValueError:
+        opcion = int(9)
 
     match opcion:
         case 0:
