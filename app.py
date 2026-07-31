@@ -118,7 +118,7 @@ class LinkedList:
         contador = 0
         while( current): #Recorre los nodos hasta el medio
             if(current.data == data):
-                print("encontrado en posicion: " + str(contador+1))
+                print("encontrado en posicion: " + str(contador))
                 return
             current = current.next
             contador = contador + 1
@@ -139,7 +139,7 @@ lista1 = LinkedList()
 
 opcion = 0
 
-while(opcion != 8): 
+while(opcion != 9): 
 
     if os.name == "nt":
         os.system("cls")
@@ -155,7 +155,8 @@ while(opcion != 8):
     print("5- Eliminar numero al inicio")
     print("6- Eliminar numero el numero en una posicion")
     print("7- Eliminar numero al final")
-    print("8- Salir")
+    print("8- Buscar en lista")
+    print("9- Salir")
     print("----------------------------------")
 
 
@@ -163,7 +164,7 @@ while(opcion != 8):
     try:
         opcion = int(opcion)
     except ValueError:
-        opcion = int(9)
+        opcion = int(10)
 
     match opcion:
         case 0:
@@ -173,18 +174,23 @@ while(opcion != 8):
             lista1.display()
             input("Presione una tecla para continuar")
         case 2:
-            opcion = int(input("Ingrese el numero a insertar: "))
-            lista1.AddInFront(int(opcion))
+            Addopcion = input("Ingrese el numero a insertar: ")
+            try:
+                Addopcion = int(Addopcion)
+            except ValueError:
+                input("Ingrese un numero")
+                break
+            lista1.AddInFront(int(Addopcion))
             lista1.display()
             input("Presione una tecla para continuar")
         case 3:
-            opcion = int(input("Ingrese el numero a insertar: "))
-            lista1.AddinMiddle(int(opcion))
+            Addopcion = int(input("Ingrese el numero a insertar: "))
+            lista1.AddinMiddle(int(Addopcion))
             lista1.display()
             input("Presione una tecla para continuar")
         case 4:
-            opcion = int(input("Ingrese el numero a insertar: "))
-            lista1.insert(opcion)
+            Addopcion = int(input("Ingrese el numero a insertar: "))
+            lista1.insert(Addopcion)
             lista1.display()
             input("Presione una tecla para continuar")
         case 5: 
@@ -193,8 +199,8 @@ while(opcion != 8):
             input("Presione una tecla para continuar")
         case 6:
             lista1.display()
-            opcion = int(input("Ingrese la posicion a eliminar: "))
-            lista1.eliminarEnPosicion(opcion)
+            Addopcion = int(input("Ingrese la posicion a eliminar: "))
+            lista1.eliminarEnPosicion(Addopcion)
             lista1.display()
             input("Presione una tecla para continuar")
         case 7:
@@ -202,11 +208,12 @@ while(opcion != 8):
             lista1.display()
             input("Presione una tecla para continuar")
         case 8:
-            opcion = int(input("Ingrese un numero para buscar: "))
-            lista1.BuscarElemento(opcion)
+            Addopcion = int(input("Ingrese un numero para buscar: "))
+            lista1.display()
+            lista1.BuscarElemento(Addopcion)
             input("Presione una tecla para continuar")
-
         case 9: 
+            print("Saliendo...")
             exit
         case _:
             print("Opcion no valida")
