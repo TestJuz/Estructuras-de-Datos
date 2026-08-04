@@ -177,41 +177,53 @@ while(opcion != 9):
             Addopcion = input("Ingrese el numero a insertar: ")
             try:
                 Addopcion = int(Addopcion)
+                lista1.AddInFront(int(Addopcion))
+                lista1.display()
+                input("Presione una tecla para continuar")
             except ValueError:
                 input("Ingrese un numero")
-                break
-            lista1.AddInFront(int(Addopcion))
-            lista1.display()
-            input("Presione una tecla para continuar")
+    
         case 3:
-            Addopcion = int(input("Ingrese el numero a insertar: "))
-            lista1.AddinMiddle(int(Addopcion))
-            lista1.display()
-            input("Presione una tecla para continuar")
+            try:
+                Addopcion = int(input("Ingrese el numero a insertar: "))
+                lista1.AddinMiddle(int(Addopcion))
+                lista1.display()
+                input("Presione una tecla para continuar")
+            except ValueError:
+                input("Ingrese un numero")
         case 4:
-            Addopcion = int(input("Ingrese el numero a insertar: "))
-            lista1.insert(Addopcion)
-            lista1.display()
-            input("Presione una tecla para continuar")
+            try:
+                Addopcion = int(input("Ingrese el numero a insertar: "))
+                lista1.insert(Addopcion)
+                lista1.display()
+                input("Presione una tecla para continuar")
+            except ValueError:
+                input("Ingrese un numero")
         case 5: 
             lista1.eliminarAlhead()
             lista1.display()
             input("Presione una tecla para continuar")
         case 6:
-            lista1.display()
-            Addopcion = int(input("Ingrese la posicion a eliminar: "))
-            lista1.eliminarEnPosicion(Addopcion)
-            lista1.display()
-            input("Presione una tecla para continuar")
+            try:
+                lista1.display()
+                Addopcion = int(input("Ingrese la posicion a eliminar: "))
+                lista1.eliminarEnPosicion(Addopcion)
+                lista1.display()
+                input("Presione una tecla para continuar")
+            except ValueError:
+                input("Ingrese un numero")
         case 7:
             lista1.eliminarAlFinal()
             lista1.display()
             input("Presione una tecla para continuar")
         case 8:
-            Addopcion = int(input("Ingrese un numero para buscar: "))
-            lista1.display()
-            lista1.BuscarElemento(Addopcion)
-            input("Presione una tecla para continuar")
+            try:
+                Addopcion = int(input("Ingrese un numero para buscar: "))
+                lista1.display()
+                lista1.BuscarElemento(Addopcion)
+                input("Presione una tecla para continuar")
+            except ValueError:
+                input("Ingrese un numero")
         case 9: 
             print("Saliendo...")
             exit
