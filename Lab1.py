@@ -7,7 +7,7 @@ class node:
 #Fin de la clase nodo
 
 #Creacion de la lista
-class LinkedList:
+class SimpleList:
     def __init__(self):
         self.head = None
 
@@ -134,7 +134,7 @@ class LinkedList:
         
 
 
-lista1 = LinkedList()
+lista1 = SimpleList()
 
 
 opcion = 0
