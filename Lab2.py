@@ -55,14 +55,30 @@ class LinkedList:
         print("None")
 
     def Buscar(self,data):
+        if self.IsEmpty():
+            return
         current = self.head
         position = 0
+        
         while current:
             if current.data == data:
                 return position
             current = current.next
             position +=1
         return -1
+
+    def EliminarAlFinal(self):
+        if self.IsEmpty():
+            return
+        if self.tamanio <= 1:
+            self.head = None
+            self.tail = None
+            return
+        self.tail = self.tail.previous
+        self.tail.next = None
+        return
+
+
 
 
 
@@ -83,7 +99,8 @@ lista1.Agregar_final(1)
 lista1.Agregar_final(2)
 lista1.Agregar_final(3)
 lista1.Agregar_final(4)
+lista1.recorrer_adelante()
+lista1.EliminarAlFinal()
 lista1.recorrer_atras()
-
 result = lista1.Buscar(2)
 print("Elemento no encontrado" if result == -1 else "Elemento encontrado en la posición: " + str(result))
