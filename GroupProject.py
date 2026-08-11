@@ -1,4 +1,7 @@
-﻿class Producto:
+﻿from collections import deque
+
+
+class Producto:
     def __init__(self, id_producto, nombre, precio, pais_origen, existencias):
         self.id_producto = id_producto
         self.nombre = nombre
@@ -89,6 +92,17 @@ class ListaDobleProductos:
             print(actual.producto)
             actual = actual.next
 
+    def lista_doble_a_cola(lista_doble):
+        cola = deque()
+        actual = lista_doble.head
+        while actual is not None:
+            if actual.producto.existencias == 0:
+                cola.append(actual.producto)
+            actual = actual.next
+        return cola 
+
+
+
 
 def leer_texto(mensaje):
     while True:
@@ -178,7 +192,13 @@ def main():
             else:
                 print("No se encontro un producto con ese ID.")
         elif opcion == "4":
-            print("Opcion pendiente de implementar.")
+            cola = ListaDobleProductos.lista_doble_a_cola(lista)
+            if cola:
+                print("Productos sin existencias pasados a la cola:")
+                for producto in cola:
+                    print(producto)
+            else:
+                print("No hay productos sin existencias.")
         elif opcion == "5":
             print("Opcion pendiente de implementar.")
         elif opcion == "6":
