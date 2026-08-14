@@ -216,14 +216,19 @@ if __name__ == "__main__":
         archivo.write("====================================\n\n")
         archivo.write(
             "Cantidad de temperaturas: "
-            + str(lista.tamanio_lista())
+            + str(lista.tamanio_lista()) 
             + "\n"
             + "Temperatura mayor: "
-            + str(lista.temperaturaMayor())
+            + str(lista.temperaturaMayor()) + " °C"
+            + "\n"
             + "Temperatura menor: "
-            + str(lista.temperaturaMenor())
+            + str(lista.temperaturaMenor()) + " °C"
+            + "\n"
             + "Temperatura promedio: "
-            + str(lista.encontrarPromedio())
+            + str(lista.encontrarPromedio()) + " °C"
+            + "\n"
+            + "Elaborado por Jeaustin Rodriguez y Isaac Herrera"
+
         )
       
 
