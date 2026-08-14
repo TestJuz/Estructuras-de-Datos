@@ -1,0 +1,5 @@
+====================================
+    REPORTE DE TEMPERATURAS
+====================================
+
+Cantidad de temperaturas: 99

@@ -168,7 +168,7 @@ if __name__ == "__main__":
                     # Insertar el valor en la lista
                     lista.AgregarAlInicio(valor)
                     lista.RecorrerAdelante()
-                    print(f"Cantidad de elementos: {lista.cantidadElementos()}")
+                    print(f"Cantidad de elementos: {lista.tamanio_lista()}")
 
     except FileNotFoundError:
         print("Error: el archivo datos.txt no existe.")
@@ -184,7 +184,7 @@ if __name__ == "__main__":
         archivo.write("====================================\n\n")
         archivo.write(
             "Cantidad de temperaturas: "
-            + str(lista.cantidadElementos())
+            + str(lista.tamanio_lista())
             + "\n"
         )
 
