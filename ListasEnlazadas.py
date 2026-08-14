@@ -160,6 +160,30 @@ class ListaDoblementeEnlazada:
             actual = actual.siguiente
         return float(valor/self.tamanio)
     
+    def temperaturaMayor(self):
+        if self.estaVacia():
+            print("La Lista se encuentra vacia.")
+            return None
+        ppio = self.cabeza
+        self.mayor = ppio.valor
+        while ppio is not None:
+            if ppio.valor > self.mayor:
+                self.mayor = ppio.valor
+            ppio = ppio.siguiente
+        return self.mayor
+
+    def temperaturaMenor(self):
+        if self.estaVacia():
+            print("La Lista se encuentra vacia.")
+            return None
+        ppio = self.cabeza
+        self.menor = ppio.valor
+        while ppio is not None:
+            if ppio.valor < self.menor:
+                self.menor = ppio.valor
+            ppio = ppio.siguiente
+        return self.menor
+
 
 
 
@@ -169,7 +193,7 @@ if __name__ == "__main__":
     try:
         with open("datos.txt", "r") as archivo:
             for linea in archivo:
-                linea = linea.strip()
+                linea = linea.strip() 
                 # Evitar líneas vacías
                 if linea != "":
                     valor = int(linea)
@@ -197,7 +221,7 @@ if __name__ == "__main__":
             + "Temperatura promedio: "
             + str(lista.encontrarPromedio())
         )
-
+      
 
 
 
