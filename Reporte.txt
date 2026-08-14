@@ -3,3 +3,4 @@
 ====================================
 
 Cantidad de temperaturas: 99
+Temperatura promedio: 26.161616161616163

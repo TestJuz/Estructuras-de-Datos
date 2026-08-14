@@ -151,6 +151,14 @@ class ListaDoblementeEnlazada:
         self.tamanio -= 1
 
         return valor_eliminado
+
+    def encontrarPromedio(self):
+        actual = self.cabeza
+        valor = 0
+        while actual is not None:
+            valor += int(actual.valor)
+            actual = actual.siguiente
+        return float(valor/self.tamanio)
     
 
 
@@ -186,6 +194,8 @@ if __name__ == "__main__":
             "Cantidad de temperaturas: "
             + str(lista.tamanio_lista())
             + "\n"
+            + "Temperatura promedio: "
+            + str(lista.encontrarPromedio())
         )
 
 
