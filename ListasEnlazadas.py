@@ -154,22 +154,49 @@ class ListaDoblementeEnlazada:
     
 
 
+
 if __name__ == "__main__":
-   listaD = ListaDoblementeEnlazada()
+# Crear la lista doblemente enlazada
+    lista = ListaDoblemente()
+    try:
+        with open("datos.txt", "r") as archivo:
+            for linea in archivo:
+                linea = linea.strip()
+                # Evitar líneas vacías
+                if linea != "":
+                    valor = int(linea)
+                    # Insertar el valor en la lista
+                    lista.insertarAlInicio(valor)
+                    lista.imprimirAdelante()
+                    print(f"Cantidad de elementos: {lista.cantidadElementos()}")
 
-  
+    except FileNotFoundError:
+        print("Error: el archivo datos.txt no existe.")
+        exit()
+
+    except ValueError:
+        print("Error: el archivo contiene un dato que no es entero.")
+        exit()
 
 
 
-   listaD.insertar_final(20)
-   listaD.insertar_medio(25,1)
-   listaD.insertar_final(15)
-   listaD.RecorrerAdelante()
-   print("Ahora usando los metodos de eliminar: ")
 
-   listaD.eliminarMedio(1)
-   listaD.RecorrerAdelante()
+#if __name__ == "__main__":
+#   listaD = ListaDoblementeEnlazada()
+#
+#  
 
-   listaD.eliminar_inicio()
-   listaD.RecorrerAdelante()
+
+
+#   listaD.insertar_final(20)
+#   listaD.insertar_medio(25,1)
+#   listaD.insertar_final(15)
+#   listaD.RecorrerAdelante()
+#   print("Ahora usando los metodos de eliminar: ")
+
+#  listaD.eliminarMedio(1)
+# listaD.RecorrerAdelante()
+
+#   listaD.eliminar_inicio()
+#   listaD.RecorrerAdelante()
 
