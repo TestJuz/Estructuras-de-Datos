@@ -28,6 +28,20 @@ class SimpleList:
             current = current.next #Navegacion entre nodos 
         print("None")
 
+    # Método público que inicia la recursión desde la cabeza (head)
+    def displayRecursivo(self):
+        self._display_interno(self.head)
+
+    # Método privado que realiza la recursión nodo por nodo
+    def _display_interno(self, actual):
+        if actual is None:
+            return
+        
+        print(actual.data)
+        self._display_interno(actual.next)
+
+
+
     def AddInFront(self,data):
         new_node = node(data)
         if(self.head is None):
@@ -136,7 +150,14 @@ class SimpleList:
 
 lista1 = SimpleList()
 
+lista1.AddInFront(1)
+lista1.AddInFront(2)
+lista1.AddInFront(3)
+lista1.AddInFront(4)
+lista1.AddInFront(5)
 
+lista1.displayRecursivo()
+input("Presione una tecla para continuar")
 opcion = 0
 
 while(opcion != 9): 
