@@ -157,7 +157,7 @@ class ListaDoblementeEnlazada:
 
 if __name__ == "__main__":
 # Crear la lista doblemente enlazada
-    lista = ListaDoblemente()
+    lista = ListaDoblementeEnlazada()
     try:
         with open("datos.txt", "r") as archivo:
             for linea in archivo:
@@ -166,8 +166,8 @@ if __name__ == "__main__":
                 if linea != "":
                     valor = int(linea)
                     # Insertar el valor en la lista
-                    lista.insertarAlInicio(valor)
-                    lista.imprimirAdelante()
+                    lista.AgregarAlInicio(valor)
+                    lista.RecorrerAdelante()
                     print(f"Cantidad de elementos: {lista.cantidadElementos()}")
 
     except FileNotFoundError:
