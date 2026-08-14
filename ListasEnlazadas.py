@@ -178,6 +178,17 @@ if __name__ == "__main__":
         print("Error: el archivo contiene un dato que no es entero.")
         exit()
 
+    with open("Reporte.txt", "w") as archivo:
+        archivo.write("====================================\n")
+        archivo.write("    REPORTE DE TEMPERATURAS\n")
+        archivo.write("====================================\n\n")
+        archivo.write(
+            "Cantidad de temperaturas: "
+            + str(lista.cantidadElementos())
+            + "\n"
+        )
+
+
 
 
 
