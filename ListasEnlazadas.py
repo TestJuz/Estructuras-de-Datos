@@ -218,6 +218,10 @@ if __name__ == "__main__":
             "Cantidad de temperaturas: "
             + str(lista.tamanio_lista())
             + "\n"
+            + "Temperatura mayor: "
+            + str(lista.temperaturaMayor())
+            + "Temperatura menor: "
+            + str(lista.temperaturaMenor())
             + "Temperatura promedio: "
             + str(lista.encontrarPromedio())
         )
