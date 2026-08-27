@@ -1,13 +1,13 @@
 import random
 
-# Ejercicio 1: Generación de datos
+
 datos = [random.randint(1, 100) for _ in range(20)]
 
 print("Lista original:")
 print(datos)
 
 
-# Ejercicio 3: Selection Sort (una sola función)
+
 def selection_sort(lista, mostrar_pasos=False):
     comparaciones = 0
     intercambios = 0
@@ -35,7 +35,7 @@ def selection_sort(lista, mostrar_pasos=False):
     return lista, comparaciones, intercambios
 
 
-# --- Prueba con la lista generada aleatoriamente ---
+
 lista = datos.copy()
 lista_ordenada, comparaciones, intercambios = selection_sort(lista)
 
@@ -45,7 +45,7 @@ print(f"Comparaciones: {comparaciones}")
 print(f"Intercambios: {intercambios}")
 
 
-# --- Recorrido manual (paso a paso) para [12, 7, 9, 3, 15] ---
+
 print("\n--- Recorrido manual para [12, 7, 9, 3, 15] ---")
 ejemplo = [12, 7, 9, 3, 15]
 resultado, comp_ejemplo, interc_ejemplo = selection_sort(ejemplo, mostrar_pasos=True)
