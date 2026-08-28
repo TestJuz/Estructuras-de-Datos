@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Selection Sort Visualizer</title>
+<style>
+  :root{
+    --bg:#0f172a;
+    --panel:#111827;
+    --panel2:#1f2937;
+    --text:#e5e7eb;
+    --muted:#94a3b8;
+    --accent:#38bdf8;
+    --compare:#f59e0b;
+    --min:#22c55e;
+    --sorted:#a78bfa;
+    --swap:#ef4444;
+    --border:#334155;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+    background:var(--bg);
+    color:var(--text);
+  }
+  .wrap{
+    width:min(1000px,94%);
+    margin:32px auto;
+  }
+  h1{margin:0 0 8px;font-size:clamp(1.6rem,4vw,2.4rem)}
+  .sub{color:var(--muted);margin-bottom:22px}
+  .panel{
+    background:var(--panel);
+    border:1px solid var(--border);
+    border-radius:16px;
+    padding:18px;
+    margin-bottom:18px;
+  }
+  .controls{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    align-items:center;
+  }
+  button,input,select{
+    font:inherit;
+  }
+  button{
+    border:1px solid var(--border);
+    background:var(--panel2);
+    color:var(--text);
+    border-radius:10px;
+    padding:10px 14px;
+    cursor:pointer;
+  }
+  button:hover{border-color:var(--accent)}
+  button:disabled{opacity:.45;cursor:not-allowed}
+  input[type="text"]{
+    flex:1 1 280px;
+    min-width:0;
+    border:1px solid var(--border);
+    background:#0b1220;
+    color:var(--text);
+    border-radius:10px;
+    padding:10px 12px;
+  }
+  input[type="range"]{width:150px}
+  .array{
+    min-height:260px;
+    display:flex;
+    align-items:flex-end;
+    gap:10px;
+    padding:30px 12px 18px;
+    overflow-x:auto;
+  }
+  .item{
+    min-width:58px;
+    flex:1 0 58px;
+    max-width:90px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:8px;
+  }
+  .bar{
+    width:100%;
+    min-height:28px;
+    border-radius:10px 10px 4px 4px;
+    background:#475569;
+    display:flex;
+    align-items:flex-start;
+    justify-content:center;
+    padding-top:8px;
+    font-weight:700;
+    transition:height .25s ease, background .2s ease, transform .2s ease;
+  }
+  .idx{font-size:.8rem;color:var(--muted)}
+  .item.compare .bar{background:var(--compare)}
+  .item.minimum .bar{background:var(--min);transform:translateY(-8px)}
+  .item.sorted .bar{background:var(--sorted)}
+  .item.swap .bar{background:var(--swap);transform:scale(1.05)}
+  .status{
+    display:grid;
+    grid-template-columns:repeat(4,minmax(0,1fr));
+    gap:10px;
+  }
+  .stat{
+    background:#0b1220;
+    border:1px solid var(--border);
+    border-radius:12px;
+    padding:12px;
+  }
+  .label{font-size:.78rem;color:var(--muted);margin-bottom:4px}
+  .value{font-weight:700;word-break:break-word}
+  .message{
+    margin-top:12px;
+    padding:12px;
+    border-left:4px solid var(--accent);
+    background:#0b1220;
+    border-radius:8px;
+    min-height:48px;
+  }
+  .legend{
+    display:flex;flex-wrap:wrap;gap:12px;margin-top:12px;color:var(--muted);font-size:.9rem
+  }
+  .dot{width:12px;height:12px;border-radius:3px;display:inline-block;margin-right:6px;vertical-align:-1px}
+  .compare{background:var(--compare)}
+  .minimum{background:var(--min)}
+  .sorted{background:var(--sorted)}
+  .swap{background:var(--swap)}
+  @media(max-width:650px){
+    .status{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .array{gap:7px}
+    .item{min-width:48px;flex-basis:48px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Selection Sort — Visualizador</h1>
+  <div class="sub">Observa cada comparación, el mínimo encontrado y el intercambio de cada pasada.</div>
+
+  <div class="panel">
+    <div class="controls">
+      <input id="arrayInput" type="text" value="5, 3, 8, 1, 4, 7, 2, 6" aria-label="Lista de números">
+      <button id="loadBtn">Cargar</button>
+      <button id="randomBtn">Aleatorio</button>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div id="array" class="array" aria-live="polite"></div>
+
+    <div class="controls">
+      <button id="prevBtn">⟵ Anterior</button>
+      <button id="nextBtn">Siguiente ⟶</button>
+      <button id="playBtn">▶ Auto</button>
+      <button id="pauseBtn" disabled>⏸ Pausa</button>
+      <button id="resetBtn">↺ Reiniciar</button>
+      <label style="margin-left:auto;color:var(--muted)">
+        Velocidad
+        <input id="speed" type="range" min="150" max="1500" step="50" value="650">
+      </label>
+    </div>
+
+    <div class="legend">
+      <span><i class="dot compare"></i>Comparando</span>
+      <span><i class="dot minimum"></i>Mínimo actual</span>
+      <span><i class="dot swap"></i>Intercambio</span>
+      <span><i class="dot sorted"></i>Ordenado</span>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="status">
+      <div class="stat"><div class="label">Paso</div><div class="value" id="stepVal">0</div></div>
+      <div class="stat"><div class="label">Pasada</div><div class="value" id="passVal">1</div></div>
+      <div class="stat"><div class="label">Comparaciones</div><div class="value" id="comparisonsVal">0</div></div>
+      <div class="stat"><div class="label">Intercambios</div><div class="value" id="swapsVal">0</div></div>
+    </div>
+    <div class="message" id="message">Presiona “Siguiente” para comenzar.</div>
+  </div>
+</div>
+
+<script>
+(() => {
+  const root = document;
+  const arrayEl = root.getElementById('array');
+  const inputEl = root.getElementById('arrayInput');
+  const loadBtn = root.getElementById('loadBtn');
+  const randomBtn = root.getElementById('randomBtn');
+  const prevBtn = root.getElementById('prevBtn');
+  const nextBtn = root.getElementById('nextBtn');
+  const playBtn = root.getElementById('playBtn');
+  const pauseBtn = root.getElementById('pauseBtn');
+  const resetBtn = root.getElementById('resetBtn');
+  const speedEl = root.getElementById('speed');
+  const stepVal = root.getElementById('stepVal');
+  const passVal = root.getElementById('passVal');
+  const comparisonsVal = root.getElementById('comparisonsVal');
+  const swapsVal = root.getElementById('swapsVal');
+  const messageEl = root.getElementById('message');
+
+  let original = [];
+  let states = [];
+  let index = 0;
+  let timer = null;
+
+  function parseInput(){
+    const values = inputEl.value.split(',')
+      .map(v => Number(v.trim()))
+      .filter(v => Number.isFinite(v));
+    if(values.length < 2) throw new Error('Ingresa al menos 2 números separados por comas.');
+    if(values.length > 20) throw new Error('Usa como máximo 20 números.');
+    return values;
+  }
+
+  function buildStates(values){
+    const a = [...values];
+    const out = [];
+    let comparisons = 0;
+    let swaps = 0;
+
+    out.push({
+      a:[...a], i:0, j:null, min:null, type:'start',
+      comparisons, swaps, sortedUntil:-1,
+      message:'Inicio: aún no se ha ordenado ningún elemento.'
+    });
+
+    for(let i=0;i<a.length-1;i++){
+      let min=i;
+      out.push({
+        a:[...a], i, j:null, min, type:'minimum',
+        comparisons, swaps, sortedUntil:i-1,
+        message:`Pasada ${i+1}: suponemos que ${a[min]} es el mínimo.`
+      });
+
+      for(let j=i+1;j<a.length;j++){
+        comparisons++;
+        out.push({
+          a:[...a], i, j, min, type:'compare',
+          comparisons, swaps, sortedUntil:i-1,
+          message:`Comparamos ${a[j]} con el mínimo actual ${a[min]}.`
+        });
+
+        if(a[j] < a[min]){
+          min=j;
+          out.push({
+            a:[...a], i, j, min, type:'minimum',
+            comparisons, swaps, sortedUntil:i-1,
+            message:`Nuevo mínimo encontrado: ${a[min]}.`
+          });
+        }
+      }
+
+      if(min !== i){
+        const left=a[i], right=a[min];
+        [a[i],a[min]]=[a[min],a[i]];
+        swaps++;
+        out.push({
+          a:[...a], i, j:null, min, type:'swap',
+          swapIndices:[i,min],
+          comparisons, swaps, sortedUntil:i,
+          message:`Intercambio: ${left} ↔ ${right}. La posición ${i} queda ordenada.`
+        });
+      }else{
+        out.push({
+          a:[...a], i, j:null, min, type:'sorted',
+          comparisons, swaps, sortedUntil:i,
+          message:`No hace falta intercambio. ${a[i]} ya está en su posición correcta.`
+        });
+      }
+    }
+
+    out.push({
+      a:[...a], i:a.length-1, j:null, min:null, type:'done',
+      comparisons, swaps, sortedUntil:a.length-1,
+      message:`Terminado. Lista ordenada: [${a.join(', ')}]`
+    });
+
+    return out;
+  }
+
+  function render(){
+    const s = states[index];
+    if(!s) return;
+
+    arrayEl.innerHTML='';
+    const max = Math.max(...s.a.map(v => Math.abs(v)), 1);
+
+    s.a.forEach((value,k)=>{
+      const item=document.createElement('div');
+      item.className='item';
+
+      if(k <= s.sortedUntil) item.classList.add('sorted');
+      if(s.type==='compare' && k===s.j) item.classList.add('compare');
+      if(s.min===k && k > s.sortedUntil) item.classList.add('minimum');
+      if(s.type==='swap' && s.swapIndices?.includes(k)) item.classList.add('swap');
+
+      const bar=document.createElement('div');
+      bar.className='bar';
+      bar.style.height = `${40 + (Math.abs(value)/max)*150}px`;
+      bar.textContent=value;
+
+      const idx=document.createElement('div');
+      idx.className='idx';
+      idx.textContent=`índice ${k}`;
+
+      item.append(bar,idx);
+      arrayEl.appendChild(item);
+    });
+
+    stepVal.textContent = `${index} / ${states.length-1}`;
+    passVal.textContent = Math.min((s.i ?? 0)+1, s.a.length);
+    comparisonsVal.textContent = s.comparisons;
+    swapsVal.textContent = s.swaps;
+    messageEl.textContent = s.message;
+
+    prevBtn.disabled = index===0;
+    nextBtn.disabled = index===states.length-1;
+    if(index===states.length-1) stopAuto();
+  }
+
+  function load(values){
+    stopAuto();
+    original=[...values];
+    states=buildStates(original);
+    index=0;
+    render();
+  }
+
+  function next(){
+    if(index < states.length-1){
+      index++;
+      render();
+    }
+  }
+
+  function prev(){
+    if(index > 0){
+      index--;
+      render();
+    }
+  }
+
+  function startAuto(){
+    if(index >= states.length-1) index=0;
+    stopAuto();
+    playBtn.disabled=true;
+    pauseBtn.disabled=false;
+    timer=setInterval(next, Number(speedEl.value));
+  }
+
+  function stopAuto(){
+    if(timer){ clearInterval(timer); timer=null; }
+    playBtn.disabled=false;
+    pauseBtn.disabled=true;
+  }
+
+  loadBtn.addEventListener('click',()=>{
+    try{
+      load(parseInput());
+    }catch(err){
+      messageEl.textContent=err.message;
+    }
+  });
+
+  randomBtn.addEventListener('click',()=>{
+    const count=8;
+    const vals=Array.from({length:count},()=>Math.floor(Math.random()*90)+10);
+    inputEl.value=vals.join(', ');
+    load(vals);
+  });
+
+  nextBtn.addEventListener('click',next);
+  prevBtn.addEventListener('click',prev);
+  playBtn.addEventListener('click',startAuto);
+  pauseBtn.addEventListener('click',stopAuto);
+  resetBtn.addEventListener('click',()=>load(original));
+  speedEl.addEventListener('input',()=>{
+    if(timer) startAuto();
+  });
+
+  inputEl.addEventListener('keydown',(e)=>{
+    if(e.key==='Enter') loadBtn.click();
+  });
+
+  load(parseInput());
+})();
+</script>
+</body>
+</html>
