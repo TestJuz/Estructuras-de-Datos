@@ -109,7 +109,7 @@
       <button id="playBtn" type="button">▶ Auto</button>
       <button id="pauseBtn" type="button" disabled>⏸ Pausa</button>
       <button id="resetBtn" type="button">↺ Reiniciar</button>
-      <label style="margin-left:auto;color:var(--muted)">Velocidad <input id="speed" type="range" min="150" max="1500" step="50" value="650"></label>
+      <label style="margin-left:auto;color:var(--muted)">Velocidad <strong id="speedLabel" style="color:var(--text)">55%</strong> <input id="speed" type="range" min="1" max="100" step="1" value="55" aria-label="Velocidad de reproducción"></label>
     </div>
     <div class="legend">
       <span><i class="dot compare"></i>Comparando / activo</span>
@@ -204,6 +204,7 @@
   const pauseBtn = $('pauseBtn');
   const resetBtn = $('resetBtn');
   const speedEl = $('speed');
+  const speedLabel = $('speedLabel');
   const stepVal = $('stepVal');
   const passVal = $('passVal');
   const comparisonsVal = $('comparisonsVal');
@@ -537,16 +538,35 @@
   function next(){ if(index<states.length-1){index++;render();} }
   function prev(){ if(index>0){index--;render();} }
   function stopAuto(){ if(timer){clearInterval(timer);timer=null;} playBtn.disabled=false; pauseBtn.disabled=true; }
-  function startAuto(){ if(index>=states.length-1) index=0; stopAuto(); playBtn.disabled=true; pauseBtn.disabled=false; timer=setInterval(next,Number(speedEl.value)); }
 
-  loadBtn.addEventListener('click',()=>{ try{load(parseInput());}catch(err){messageEl.textContent=err.message;} });
+  function playbackDelay(){
+    const speed=Math.max(1,Math.min(100,Number(speedEl.value)||55));
+    // Nonlinear mapping: the upper end becomes dramatically faster.
+    const slow=1600;
+    const fast=15;
+    const t=(speed-1)/99;
+    return Math.round(slow*Math.pow(fast/slow,t));
+  }
+
+  function updateSpeedLabel(){
+    const speed=Math.max(1,Math.min(100,Number(speedEl.value)||55));
+    const delay=playbackDelay();
+    speedLabel.textContent=`${speed}% · ${delay} ms/paso`;
+  }
+
+  function startAuto(){ if(index>=states.length-1) index=0; stopAuto(); playBtn.disabled=true; pauseBtn.disabled=false; timer=setInterval(next,playbackDelay()); }
+
+  loadBtn.addEventListener('click',()=>{ try{updateSpeedLabel(); load(parseInput());}catch(err){messageEl.textContent=err.message;} });
   randomBtn.addEventListener('click',()=>{ const vals=Array.from({length:8},()=>Math.floor(Math.random()*90)+10); inputEl.value=vals.join(', '); load(vals); });
   nextBtn.addEventListener('click',next);
   prevBtn.addEventListener('click',prev);
   playBtn.addEventListener('click',startAuto);
   pauseBtn.addEventListener('click',stopAuto);
   resetBtn.addEventListener('click',()=>load(original));
-  speedEl.addEventListener('input',()=>{ if(timer) startAuto(); });
+  speedEl.addEventListener('input',()=>{
+    updateSpeedLabel();
+    if(timer) startAuto();
+  });
   inputEl.addEventListener('keydown',e=>{ if(e.key==='Enter') loadBtn.click(); });
   visualAlgo.addEventListener('change',()=>load(original.length?original:parseInput()));
 
@@ -807,7 +827,8 @@
   complexityN.addEventListener('input',()=>{const v=Number(complexityN.value);if(Number.isFinite(v)&&v>=2&&v<=1000000) drawComplexityChart();});
   window.addEventListener('resize',drawComplexityChart);
 
-  load(parseInput());
+  updateSpeedLabel();
+  updateSpeedLabel(); load(parseInput());
   buildToggles();
   drawComplexityChart();
 })();
