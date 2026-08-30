@@ -92,16 +92,78 @@ class ListaDobleProductos:
             print(actual.producto)
             actual = actual.next
 
-    def lista_doble_a_cola(lista_doble):
+    def mostrar_productos_recursivo(self, nodo="__inicio__"):
+        # Punto de entrada: primera llamada no pasa nodo, empieza en head
+        if nodo == "__inicio__":
+            if self.esta_vacia():
+                print("No hay productos registrados.")
+                return
+            nodo = self.head
+
+        # Caso base: llegamos al final de la lista
+        if nodo is None:
+            return
+
+        print(nodo.producto)
+        self.mostrar_productos_recursivo(nodo.next)
+
+    def lista_doble_a_cola(self):
+       
         cola = deque()
-        actual = lista_doble.head
+        actual = self.head
+
         while actual is not None:
+            siguiente = actual.next  # guardamos antes de posiblemente desligar el nodo
+
             if actual.producto.existencias == 0:
                 cola.append(actual.producto)
+                self.eliminar_producto(actual.producto.id_producto)
+
+            actual = siguiente
+
+        return cola
+
+    def generar_frecuencia_paises(self):
+        
+        frecuencias = {}
+        actual = self.head
+
+        while actual:
+            pais = actual.producto.pais_origen
+            frecuencias[pais] = frecuencias.get(pais, 0) + 1
             actual = actual.next
-        return cola 
 
+        return frecuencias
 
+    def generar_reporte_recuperacion(self, ruta_archivo="archivo.txt"):
+      
+        if self.esta_vacia():
+            return False, 0.0
+
+        total_general = 0.0
+
+        with open(ruta_archivo, "w", encoding="utf-8") as archivo:
+            archivo.write("REPORTE DE RECUPERACION - SUPERMERCADO\n")
+            archivo.write("=" * 60 + "\n\n")
+
+            actual = self.head
+            while actual:
+                p = actual.producto
+                subtotal = p.precio * p.existencias
+                total_general += subtotal
+
+                archivo.write(
+                    f"ID: {p.id_producto} | Nombre: {p.nombre} | "
+                    f"Precio: {p.precio:.2f} | Existencias: {p.existencias} | "
+                    f"Subtotal: {subtotal:.2f}\n"
+                )
+
+                actual = actual.next
+
+            archivo.write("\n" + "=" * 60 + "\n")
+            archivo.write(f"TOTAL A RECUPERAR: {total_general:.2f}\n")
+
+        return True, total_general
 
 
 def leer_texto(mensaje):
@@ -192,19 +254,43 @@ def main():
             else:
                 print("No se encontro un producto con ese ID.")
         elif opcion == "4":
-            cola = ListaDobleProductos.lista_doble_a_cola(lista)
+            cola = lista.lista_doble_a_cola()
+
             if cola:
-                print("Productos sin existencias pasados a la cola:")
+                print("Productos sin existencias pasados a la cola (y eliminados de la lista):")
                 for producto in cola:
                     print(producto)
             else:
                 print("No hay productos sin existencias.")
         elif opcion == "5":
-            print("Opcion pendiente de implementar.")
+            frecuencias = lista.generar_frecuencia_paises()
+
+            if not frecuencias:
+                print("No hay productos registrados.")
+            else:
+                print("\nFrecuencia de productos por pais de origen:")
+                # Ordenamos de mayor a menor frecuencia
+                paises_ordenados = sorted(
+                    frecuencias.items(), key=lambda item: item[1], reverse=True
+                )
+
+                for pais, cantidad in paises_ordenados:
+                    print(f"{pais}: {cantidad} producto(s)")
+
+                pais_top, cantidad_top = paises_ordenados[0]
+                print(
+                    f"\nEl pais desde el que mas se importa es: "
+                    f"{pais_top} ({cantidad_top} producto(s))"
+                )
         elif opcion == "6":
-            print("Opcion pendiente de implementar.")
+            exito, total = lista.generar_reporte_recuperacion("archivo.txt")
+
+            if exito:
+                print(f"Reporte generado en 'archivo.txt'. Total a recuperar: {total:.2f}")
+            else:
+                print("No hay productos registrados, no se genero el reporte.")
         elif opcion == "7":
-            print("Opcion pendiente de implementar.")
+            lista.mostrar_productos_recursivo()
         elif opcion == "8":
             print("Programa finalizado.")
             break
@@ -214,5 +300,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
