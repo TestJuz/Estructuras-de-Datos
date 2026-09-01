@@ -1,9 +1,0 @@
-====================================
-    REPORTE DE TEMPERATURAS
-====================================
-
-Cantidad de temperaturas: 99
-Temperatura mayor: 34 °C
-Temperatura menor: 18 °C
-Temperatura promedio: 26.161616161616163 °C
-Elaborado por Jeaustin Rodriguez y Isaac Herrera
