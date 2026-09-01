@@ -1,8 +1,0 @@
-REPORTE DE RECUPERACION - SUPERMERCADO
-============================================================
-
-ID: 23 | Nombre: Manzana | Precio: 200.00 | Existencias: 2 | Subtotal: 400.00
-ID: 12 | Nombre: Carrots | Precio: 120.00 | Existencias: 3 | Subtotal: 360.00
-
-============================================================
-TOTAL A RECUPERAR: 760.00
