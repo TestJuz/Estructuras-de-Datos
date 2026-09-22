@@ -1,0 +1,11 @@
+# Árbol general de ejemplo: estructura de carpetas de un proyecto
+ROOT,proyecto
+proyecto,src
+proyecto,docs
+proyecto,tests
+src,main.py
+src,utils
+utils,helpers.py
+utils,constants.py
+docs,README.md
+tests,test_main.py

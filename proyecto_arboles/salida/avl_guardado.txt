@@ -1,0 +1,2 @@
+# Árbol AVL serializado por niveles (ya balanceado)
+30,20,40,5,25,-,50,1,10

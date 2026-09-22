@@ -1,0 +1,1001 @@
+ID;Especie;País
+1;Guanacaste;Costa Rica
+2;Guachipelín;Costa Rica
+3;Roble sabana;Costa Rica
+4;Corteza amarilla;Costa Rica
+5;Almendro de montaña;Costa Rica
+6;Ceiba;Guatemala
+7;Matilisguate;Guatemala
+8;Pinabete;Guatemala
+9;Caoba;Belice
+10;Santa María;Belice
+11;Bálsamo;El Salvador
+12;Maquilishuat;El Salvador
+13;Pino ocote;Honduras
+14;Liquidámbar;Honduras
+15;Madroño;Nicaragua
+16;Genízaro;Nicaragua
+17;Árbol Panamá;Panamá
+18;Espavé;Panamá
+19;Palma real;Cuba
+20;Jagüey;Cuba
+21;Caoba dominicana;República Dominicana
+22;Pino criollo;República Dominicana
+23;Guayacán;Puerto Rico
+24;Ausubo;Puerto Rico
+25;Ahuehuete;México
+26;Oyamel;México
+27;Mezquite;México
+28;Copal;México
+29;Sabino;México
+30;Arce azucarero;Canadá
+31;Abeto balsámico;Canadá
+32;Cedro rojo occidental;Canadá
+33;Secuoya gigante;Estados Unidos
+34;Secuoya roja;Estados Unidos
+35;Pino ponderosa;Estados Unidos
+36;Roble blanco;Estados Unidos
+37;Nogal negro;Estados Unidos
+38;Araucaria;Chile
+39;Alerce patagónico;Chile
+40;Coigüe;Chile
+41;Lenga;Argentina
+42;Quebracho colorado;Argentina
+43;Ombú;Argentina
+44;Lapacho rosado;Paraguay
+45;Palo santo;Paraguay
+46;Tajibo;Bolivia
+47;Queñua;Bolivia
+48;Árbol de la quina;Perú
+49;Algarrobo peruano;Perú
+50;Cedro andino;Ecuador
+51;Arrayán;Ecuador
+52;Palma de cera;Colombia
+53;Guayacán amarillo;Colombia
+54;Araguaney;Venezuela
+55;Samán;Venezuela
+56;Pau-brasil;Brasil
+57;Castaño de Brasil;Brasil
+58;Caucho amazónico;Brasil
+59;Ipê amarillo;Brasil
+60;Alcornoque;Portugal
+61;Olivo;España
+62;Encina;España
+63;Haya europea;Alemania
+64;Roble inglés;Reino Unido
+65;Fresno europeo;Irlanda
+66;Abedul plateado;Finlandia
+67;Abeto rojo;Noruega
+68;Pino silvestre;Suecia
+69;Tilo europeo;República Checa
+70;Castaño europeo;Italia
+71;Plátano de sombra;Francia
+72;Cedro del Líbano;Líbano
+73;Olivo de Anatolia;Turquía
+74;Cedro del Atlas;Marruecos
+75;Argán;Marruecos
+76;Baobab africano;Senegal
+77;Acacia de sombrilla;Kenia
+78;Ébano africano;Tanzania
+79;Marula;Sudáfrica
+80;Mopane;Zimbabue
+81;Baobab de Madagascar;Madagascar
+82;Sicomoro;Egipto
+83;Cedro del Himalaya;India
+84;Baniano;India
+85;Neem;India
+86;Árbol de sal;India
+87;Teca;Myanmar
+88;Dipterocarpus;Malasia
+89;Meranti rojo;Indonesia
+90;Árbol de caucho;Indonesia
+91;Bodhi;Sri Lanka
+92;Pino rojo japonés;Japón
+93;Cerezo japonés;Japón
+94;Ginkgo;China
+95;Secuoya del amanecer;China
+96;Paulownia;China
+97;Pino coreano;Corea del Sur
+98;Eucalipto azul;Australia
+99;Acacia dorada;Australia
+100;Kauri;Nueva Zelanda
+101;Guanacaste;Costa Rica
+102;Guachipelín;Costa Rica
+103;Roble sabana;Costa Rica
+104;Corteza amarilla;Costa Rica
+105;Almendro de montaña;Costa Rica
+106;Ceiba;Guatemala
+107;Matilisguate;Guatemala
+108;Pinabete;Guatemala
+109;Caoba;Belice
+110;Santa María;Belice
+111;Bálsamo;El Salvador
+112;Maquilishuat;El Salvador
+113;Pino ocote;Honduras
+114;Liquidámbar;Honduras
+115;Madroño;Nicaragua
+116;Genízaro;Nicaragua
+117;Árbol Panamá;Panamá
+118;Espavé;Panamá
+119;Palma real;Cuba
+120;Jagüey;Cuba
+121;Caoba dominicana;República Dominicana
+122;Pino criollo;República Dominicana
+123;Guayacán;Puerto Rico
+124;Ausubo;Puerto Rico
+125;Ahuehuete;México
+126;Oyamel;México
+127;Mezquite;México
+128;Copal;México
+129;Sabino;México
+130;Arce azucarero;Canadá
+131;Abeto balsámico;Canadá
+132;Cedro rojo occidental;Canadá
+133;Secuoya gigante;Estados Unidos
+134;Secuoya roja;Estados Unidos
+135;Pino ponderosa;Estados Unidos
+136;Roble blanco;Estados Unidos
+137;Nogal negro;Estados Unidos
+138;Araucaria;Chile
+139;Alerce patagónico;Chile
+140;Coigüe;Chile
+141;Lenga;Argentina
+142;Quebracho colorado;Argentina
+143;Ombú;Argentina
+144;Lapacho rosado;Paraguay
+145;Palo santo;Paraguay
+146;Tajibo;Bolivia
+147;Queñua;Bolivia
+148;Árbol de la quina;Perú
+149;Algarrobo peruano;Perú
+150;Cedro andino;Ecuador
+151;Arrayán;Ecuador
+152;Palma de cera;Colombia
+153;Guayacán amarillo;Colombia
+154;Araguaney;Venezuela
+155;Samán;Venezuela
+156;Pau-brasil;Brasil
+157;Castaño de Brasil;Brasil
+158;Caucho amazónico;Brasil
+159;Ipê amarillo;Brasil
+160;Alcornoque;Portugal
+161;Olivo;España
+162;Encina;España
+163;Haya europea;Alemania
+164;Roble inglés;Reino Unido
+165;Fresno europeo;Irlanda
+166;Abedul plateado;Finlandia
+167;Abeto rojo;Noruega
+168;Pino silvestre;Suecia
+169;Tilo europeo;República Checa
+170;Castaño europeo;Italia
+171;Plátano de sombra;Francia
+172;Cedro del Líbano;Líbano
+173;Olivo de Anatolia;Turquía
+174;Cedro del Atlas;Marruecos
+175;Argán;Marruecos
+176;Baobab africano;Senegal
+177;Acacia de sombrilla;Kenia
+178;Ébano africano;Tanzania
+179;Marula;Sudáfrica
+180;Mopane;Zimbabue
+181;Baobab de Madagascar;Madagascar
+182;Sicomoro;Egipto
+183;Cedro del Himalaya;India
+184;Baniano;India
+185;Neem;India
+186;Árbol de sal;India
+187;Teca;Myanmar
+188;Dipterocarpus;Malasia
+189;Meranti rojo;Indonesia
+190;Árbol de caucho;Indonesia
+191;Bodhi;Sri Lanka
+192;Pino rojo japonés;Japón
+193;Cerezo japonés;Japón
+194;Ginkgo;China
+195;Secuoya del amanecer;China
+196;Paulownia;China
+197;Pino coreano;Corea del Sur
+198;Eucalipto azul;Australia
+199;Acacia dorada;Australia
+200;Kauri;Nueva Zelanda
+201;Guanacaste;Costa Rica
+202;Guachipelín;Costa Rica
+203;Roble sabana;Costa Rica
+204;Corteza amarilla;Costa Rica
+205;Almendro de montaña;Costa Rica
+206;Ceiba;Guatemala
+207;Matilisguate;Guatemala
+208;Pinabete;Guatemala
+209;Caoba;Belice
+210;Santa María;Belice
+211;Bálsamo;El Salvador
+212;Maquilishuat;El Salvador
+213;Pino ocote;Honduras
+214;Liquidámbar;Honduras
+215;Madroño;Nicaragua
+216;Genízaro;Nicaragua
+217;Árbol Panamá;Panamá
+218;Espavé;Panamá
+219;Palma real;Cuba
+220;Jagüey;Cuba
+221;Caoba dominicana;República Dominicana
+222;Pino criollo;República Dominicana
+223;Guayacán;Puerto Rico
+224;Ausubo;Puerto Rico
+225;Ahuehuete;México
+226;Oyamel;México
+227;Mezquite;México
+228;Copal;México
+229;Sabino;México
+230;Arce azucarero;Canadá
+231;Abeto balsámico;Canadá
+232;Cedro rojo occidental;Canadá
+233;Secuoya gigante;Estados Unidos
+234;Secuoya roja;Estados Unidos
+235;Pino ponderosa;Estados Unidos
+236;Roble blanco;Estados Unidos
+237;Nogal negro;Estados Unidos
+238;Araucaria;Chile
+239;Alerce patagónico;Chile
+240;Coigüe;Chile
+241;Lenga;Argentina
+242;Quebracho colorado;Argentina
+243;Ombú;Argentina
+244;Lapacho rosado;Paraguay
+245;Palo santo;Paraguay
+246;Tajibo;Bolivia
+247;Queñua;Bolivia
+248;Árbol de la quina;Perú
+249;Algarrobo peruano;Perú
+250;Cedro andino;Ecuador
+251;Arrayán;Ecuador
+252;Palma de cera;Colombia
+253;Guayacán amarillo;Colombia
+254;Araguaney;Venezuela
+255;Samán;Venezuela
+256;Pau-brasil;Brasil
+257;Castaño de Brasil;Brasil
+258;Caucho amazónico;Brasil
+259;Ipê amarillo;Brasil
+260;Alcornoque;Portugal
+261;Olivo;España
+262;Encina;España
+263;Haya europea;Alemania
+264;Roble inglés;Reino Unido
+265;Fresno europeo;Irlanda
+266;Abedul plateado;Finlandia
+267;Abeto rojo;Noruega
+268;Pino silvestre;Suecia
+269;Tilo europeo;República Checa
+270;Castaño europeo;Italia
+271;Plátano de sombra;Francia
+272;Cedro del Líbano;Líbano
+273;Olivo de Anatolia;Turquía
+274;Cedro del Atlas;Marruecos
+275;Argán;Marruecos
+276;Baobab africano;Senegal
+277;Acacia de sombrilla;Kenia
+278;Ébano africano;Tanzania
+279;Marula;Sudáfrica
+280;Mopane;Zimbabue
+281;Baobab de Madagascar;Madagascar
+282;Sicomoro;Egipto
+283;Cedro del Himalaya;India
+284;Baniano;India
+285;Neem;India
+286;Árbol de sal;India
+287;Teca;Myanmar
+288;Dipterocarpus;Malasia
+289;Meranti rojo;Indonesia
+290;Árbol de caucho;Indonesia
+291;Bodhi;Sri Lanka
+292;Pino rojo japonés;Japón
+293;Cerezo japonés;Japón
+294;Ginkgo;China
+295;Secuoya del amanecer;China
+296;Paulownia;China
+297;Pino coreano;Corea del Sur
+298;Eucalipto azul;Australia
+299;Acacia dorada;Australia
+300;Kauri;Nueva Zelanda
+301;Guanacaste;Costa Rica
+302;Guachipelín;Costa Rica
+303;Roble sabana;Costa Rica
+304;Corteza amarilla;Costa Rica
+305;Almendro de montaña;Costa Rica
+306;Ceiba;Guatemala
+307;Matilisguate;Guatemala
+308;Pinabete;Guatemala
+309;Caoba;Belice
+310;Santa María;Belice
+311;Bálsamo;El Salvador
+312;Maquilishuat;El Salvador
+313;Pino ocote;Honduras
+314;Liquidámbar;Honduras
+315;Madroño;Nicaragua
+316;Genízaro;Nicaragua
+317;Árbol Panamá;Panamá
+318;Espavé;Panamá
+319;Palma real;Cuba
+320;Jagüey;Cuba
+321;Caoba dominicana;República Dominicana
+322;Pino criollo;República Dominicana
+323;Guayacán;Puerto Rico
+324;Ausubo;Puerto Rico
+325;Ahuehuete;México
+326;Oyamel;México
+327;Mezquite;México
+328;Copal;México
+329;Sabino;México
+330;Arce azucarero;Canadá
+331;Abeto balsámico;Canadá
+332;Cedro rojo occidental;Canadá
+333;Secuoya gigante;Estados Unidos
+334;Secuoya roja;Estados Unidos
+335;Pino ponderosa;Estados Unidos
+336;Roble blanco;Estados Unidos
+337;Nogal negro;Estados Unidos
+338;Araucaria;Chile
+339;Alerce patagónico;Chile
+340;Coigüe;Chile
+341;Lenga;Argentina
+342;Quebracho colorado;Argentina
+343;Ombú;Argentina
+344;Lapacho rosado;Paraguay
+345;Palo santo;Paraguay
+346;Tajibo;Bolivia
+347;Queñua;Bolivia
+348;Árbol de la quina;Perú
+349;Algarrobo peruano;Perú
+350;Cedro andino;Ecuador
+351;Arrayán;Ecuador
+352;Palma de cera;Colombia
+353;Guayacán amarillo;Colombia
+354;Araguaney;Venezuela
+355;Samán;Venezuela
+356;Pau-brasil;Brasil
+357;Castaño de Brasil;Brasil
+358;Caucho amazónico;Brasil
+359;Ipê amarillo;Brasil
+360;Alcornoque;Portugal
+361;Olivo;España
+362;Encina;España
+363;Haya europea;Alemania
+364;Roble inglés;Reino Unido
+365;Fresno europeo;Irlanda
+366;Abedul plateado;Finlandia
+367;Abeto rojo;Noruega
+368;Pino silvestre;Suecia
+369;Tilo europeo;República Checa
+370;Castaño europeo;Italia
+371;Plátano de sombra;Francia
+372;Cedro del Líbano;Líbano
+373;Olivo de Anatolia;Turquía
+374;Cedro del Atlas;Marruecos
+375;Argán;Marruecos
+376;Baobab africano;Senegal
+377;Acacia de sombrilla;Kenia
+378;Ébano africano;Tanzania
+379;Marula;Sudáfrica
+380;Mopane;Zimbabue
+381;Baobab de Madagascar;Madagascar
+382;Sicomoro;Egipto
+383;Cedro del Himalaya;India
+384;Baniano;India
+385;Neem;India
+386;Árbol de sal;India
+387;Teca;Myanmar
+388;Dipterocarpus;Malasia
+389;Meranti rojo;Indonesia
+390;Árbol de caucho;Indonesia
+391;Bodhi;Sri Lanka
+392;Pino rojo japonés;Japón
+393;Cerezo japonés;Japón
+394;Ginkgo;China
+395;Secuoya del amanecer;China
+396;Paulownia;China
+397;Pino coreano;Corea del Sur
+398;Eucalipto azul;Australia
+399;Acacia dorada;Australia
+400;Kauri;Nueva Zelanda
+401;Guanacaste;Costa Rica
+402;Guachipelín;Costa Rica
+403;Roble sabana;Costa Rica
+404;Corteza amarilla;Costa Rica
+405;Almendro de montaña;Costa Rica
+406;Ceiba;Guatemala
+407;Matilisguate;Guatemala
+408;Pinabete;Guatemala
+409;Caoba;Belice
+410;Santa María;Belice
+411;Bálsamo;El Salvador
+412;Maquilishuat;El Salvador
+413;Pino ocote;Honduras
+414;Liquidámbar;Honduras
+415;Madroño;Nicaragua
+416;Genízaro;Nicaragua
+417;Árbol Panamá;Panamá
+418;Espavé;Panamá
+419;Palma real;Cuba
+420;Jagüey;Cuba
+421;Caoba dominicana;República Dominicana
+422;Pino criollo;República Dominicana
+423;Guayacán;Puerto Rico
+424;Ausubo;Puerto Rico
+425;Ahuehuete;México
+426;Oyamel;México
+427;Mezquite;México
+428;Copal;México
+429;Sabino;México
+430;Arce azucarero;Canadá
+431;Abeto balsámico;Canadá
+432;Cedro rojo occidental;Canadá
+433;Secuoya gigante;Estados Unidos
+434;Secuoya roja;Estados Unidos
+435;Pino ponderosa;Estados Unidos
+436;Roble blanco;Estados Unidos
+437;Nogal negro;Estados Unidos
+438;Araucaria;Chile
+439;Alerce patagónico;Chile
+440;Coigüe;Chile
+441;Lenga;Argentina
+442;Quebracho colorado;Argentina
+443;Ombú;Argentina
+444;Lapacho rosado;Paraguay
+445;Palo santo;Paraguay
+446;Tajibo;Bolivia
+447;Queñua;Bolivia
+448;Árbol de la quina;Perú
+449;Algarrobo peruano;Perú
+450;Cedro andino;Ecuador
+451;Arrayán;Ecuador
+452;Palma de cera;Colombia
+453;Guayacán amarillo;Colombia
+454;Araguaney;Venezuela
+455;Samán;Venezuela
+456;Pau-brasil;Brasil
+457;Castaño de Brasil;Brasil
+458;Caucho amazónico;Brasil
+459;Ipê amarillo;Brasil
+460;Alcornoque;Portugal
+461;Olivo;España
+462;Encina;España
+463;Haya europea;Alemania
+464;Roble inglés;Reino Unido
+465;Fresno europeo;Irlanda
+466;Abedul plateado;Finlandia
+467;Abeto rojo;Noruega
+468;Pino silvestre;Suecia
+469;Tilo europeo;República Checa
+470;Castaño europeo;Italia
+471;Plátano de sombra;Francia
+472;Cedro del Líbano;Líbano
+473;Olivo de Anatolia;Turquía
+474;Cedro del Atlas;Marruecos
+475;Argán;Marruecos
+476;Baobab africano;Senegal
+477;Acacia de sombrilla;Kenia
+478;Ébano africano;Tanzania
+479;Marula;Sudáfrica
+480;Mopane;Zimbabue
+481;Baobab de Madagascar;Madagascar
+482;Sicomoro;Egipto
+483;Cedro del Himalaya;India
+484;Baniano;India
+485;Neem;India
+486;Árbol de sal;India
+487;Teca;Myanmar
+488;Dipterocarpus;Malasia
+489;Meranti rojo;Indonesia
+490;Árbol de caucho;Indonesia
+491;Bodhi;Sri Lanka
+492;Pino rojo japonés;Japón
+493;Cerezo japonés;Japón
+494;Ginkgo;China
+495;Secuoya del amanecer;China
+496;Paulownia;China
+497;Pino coreano;Corea del Sur
+498;Eucalipto azul;Australia
+499;Acacia dorada;Australia
+500;Kauri;Nueva Zelanda
+501;Guanacaste;Costa Rica
+502;Guachipelín;Costa Rica
+503;Roble sabana;Costa Rica
+504;Corteza amarilla;Costa Rica
+505;Almendro de montaña;Costa Rica
+506;Ceiba;Guatemala
+507;Matilisguate;Guatemala
+508;Pinabete;Guatemala
+509;Caoba;Belice
+510;Santa María;Belice
+511;Bálsamo;El Salvador
+512;Maquilishuat;El Salvador
+513;Pino ocote;Honduras
+514;Liquidámbar;Honduras
+515;Madroño;Nicaragua
+516;Genízaro;Nicaragua
+517;Árbol Panamá;Panamá
+518;Espavé;Panamá
+519;Palma real;Cuba
+520;Jagüey;Cuba
+521;Caoba dominicana;República Dominicana
+522;Pino criollo;República Dominicana
+523;Guayacán;Puerto Rico
+524;Ausubo;Puerto Rico
+525;Ahuehuete;México
+526;Oyamel;México
+527;Mezquite;México
+528;Copal;México
+529;Sabino;México
+530;Arce azucarero;Canadá
+531;Abeto balsámico;Canadá
+532;Cedro rojo occidental;Canadá
+533;Secuoya gigante;Estados Unidos
+534;Secuoya roja;Estados Unidos
+535;Pino ponderosa;Estados Unidos
+536;Roble blanco;Estados Unidos
+537;Nogal negro;Estados Unidos
+538;Araucaria;Chile
+539;Alerce patagónico;Chile
+540;Coigüe;Chile
+541;Lenga;Argentina
+542;Quebracho colorado;Argentina
+543;Ombú;Argentina
+544;Lapacho rosado;Paraguay
+545;Palo santo;Paraguay
+546;Tajibo;Bolivia
+547;Queñua;Bolivia
+548;Árbol de la quina;Perú
+549;Algarrobo peruano;Perú
+550;Cedro andino;Ecuador
+551;Arrayán;Ecuador
+552;Palma de cera;Colombia
+553;Guayacán amarillo;Colombia
+554;Araguaney;Venezuela
+555;Samán;Venezuela
+556;Pau-brasil;Brasil
+557;Castaño de Brasil;Brasil
+558;Caucho amazónico;Brasil
+559;Ipê amarillo;Brasil
+560;Alcornoque;Portugal
+561;Olivo;España
+562;Encina;España
+563;Haya europea;Alemania
+564;Roble inglés;Reino Unido
+565;Fresno europeo;Irlanda
+566;Abedul plateado;Finlandia
+567;Abeto rojo;Noruega
+568;Pino silvestre;Suecia
+569;Tilo europeo;República Checa
+570;Castaño europeo;Italia
+571;Plátano de sombra;Francia
+572;Cedro del Líbano;Líbano
+573;Olivo de Anatolia;Turquía
+574;Cedro del Atlas;Marruecos
+575;Argán;Marruecos
+576;Baobab africano;Senegal
+577;Acacia de sombrilla;Kenia
+578;Ébano africano;Tanzania
+579;Marula;Sudáfrica
+580;Mopane;Zimbabue
+581;Baobab de Madagascar;Madagascar
+582;Sicomoro;Egipto
+583;Cedro del Himalaya;India
+584;Baniano;India
+585;Neem;India
+586;Árbol de sal;India
+587;Teca;Myanmar
+588;Dipterocarpus;Malasia
+589;Meranti rojo;Indonesia
+590;Árbol de caucho;Indonesia
+591;Bodhi;Sri Lanka
+592;Pino rojo japonés;Japón
+593;Cerezo japonés;Japón
+594;Ginkgo;China
+595;Secuoya del amanecer;China
+596;Paulownia;China
+597;Pino coreano;Corea del Sur
+598;Eucalipto azul;Australia
+599;Acacia dorada;Australia
+600;Kauri;Nueva Zelanda
+601;Guanacaste;Costa Rica
+602;Guachipelín;Costa Rica
+603;Roble sabana;Costa Rica
+604;Corteza amarilla;Costa Rica
+605;Almendro de montaña;Costa Rica
+606;Ceiba;Guatemala
+607;Matilisguate;Guatemala
+608;Pinabete;Guatemala
+609;Caoba;Belice
+610;Santa María;Belice
+611;Bálsamo;El Salvador
+612;Maquilishuat;El Salvador
+613;Pino ocote;Honduras
+614;Liquidámbar;Honduras
+615;Madroño;Nicaragua
+616;Genízaro;Nicaragua
+617;Árbol Panamá;Panamá
+618;Espavé;Panamá
+619;Palma real;Cuba
+620;Jagüey;Cuba
+621;Caoba dominicana;República Dominicana
+622;Pino criollo;República Dominicana
+623;Guayacán;Puerto Rico
+624;Ausubo;Puerto Rico
+625;Ahuehuete;México
+626;Oyamel;México
+627;Mezquite;México
+628;Copal;México
+629;Sabino;México
+630;Arce azucarero;Canadá
+631;Abeto balsámico;Canadá
+632;Cedro rojo occidental;Canadá
+633;Secuoya gigante;Estados Unidos
+634;Secuoya roja;Estados Unidos
+635;Pino ponderosa;Estados Unidos
+636;Roble blanco;Estados Unidos
+637;Nogal negro;Estados Unidos
+638;Araucaria;Chile
+639;Alerce patagónico;Chile
+640;Coigüe;Chile
+641;Lenga;Argentina
+642;Quebracho colorado;Argentina
+643;Ombú;Argentina
+644;Lapacho rosado;Paraguay
+645;Palo santo;Paraguay
+646;Tajibo;Bolivia
+647;Queñua;Bolivia
+648;Árbol de la quina;Perú
+649;Algarrobo peruano;Perú
+650;Cedro andino;Ecuador
+651;Arrayán;Ecuador
+652;Palma de cera;Colombia
+653;Guayacán amarillo;Colombia
+654;Araguaney;Venezuela
+655;Samán;Venezuela
+656;Pau-brasil;Brasil
+657;Castaño de Brasil;Brasil
+658;Caucho amazónico;Brasil
+659;Ipê amarillo;Brasil
+660;Alcornoque;Portugal
+661;Olivo;España
+662;Encina;España
+663;Haya europea;Alemania
+664;Roble inglés;Reino Unido
+665;Fresno europeo;Irlanda
+666;Abedul plateado;Finlandia
+667;Abeto rojo;Noruega
+668;Pino silvestre;Suecia
+669;Tilo europeo;República Checa
+670;Castaño europeo;Italia
+671;Plátano de sombra;Francia
+672;Cedro del Líbano;Líbano
+673;Olivo de Anatolia;Turquía
+674;Cedro del Atlas;Marruecos
+675;Argán;Marruecos
+676;Baobab africano;Senegal
+677;Acacia de sombrilla;Kenia
+678;Ébano africano;Tanzania
+679;Marula;Sudáfrica
+680;Mopane;Zimbabue
+681;Baobab de Madagascar;Madagascar
+682;Sicomoro;Egipto
+683;Cedro del Himalaya;India
+684;Baniano;India
+685;Neem;India
+686;Árbol de sal;India
+687;Teca;Myanmar
+688;Dipterocarpus;Malasia
+689;Meranti rojo;Indonesia
+690;Árbol de caucho;Indonesia
+691;Bodhi;Sri Lanka
+692;Pino rojo japonés;Japón
+693;Cerezo japonés;Japón
+694;Ginkgo;China
+695;Secuoya del amanecer;China
+696;Paulownia;China
+697;Pino coreano;Corea del Sur
+698;Eucalipto azul;Australia
+699;Acacia dorada;Australia
+700;Kauri;Nueva Zelanda
+701;Guanacaste;Costa Rica
+702;Guachipelín;Costa Rica
+703;Roble sabana;Costa Rica
+704;Corteza amarilla;Costa Rica
+705;Almendro de montaña;Costa Rica
+706;Ceiba;Guatemala
+707;Matilisguate;Guatemala
+708;Pinabete;Guatemala
+709;Caoba;Belice
+710;Santa María;Belice
+711;Bálsamo;El Salvador
+712;Maquilishuat;El Salvador
+713;Pino ocote;Honduras
+714;Liquidámbar;Honduras
+715;Madroño;Nicaragua
+716;Genízaro;Nicaragua
+717;Árbol Panamá;Panamá
+718;Espavé;Panamá
+719;Palma real;Cuba
+720;Jagüey;Cuba
+721;Caoba dominicana;República Dominicana
+722;Pino criollo;República Dominicana
+723;Guayacán;Puerto Rico
+724;Ausubo;Puerto Rico
+725;Ahuehuete;México
+726;Oyamel;México
+727;Mezquite;México
+728;Copal;México
+729;Sabino;México
+730;Arce azucarero;Canadá
+731;Abeto balsámico;Canadá
+732;Cedro rojo occidental;Canadá
+733;Secuoya gigante;Estados Unidos
+734;Secuoya roja;Estados Unidos
+735;Pino ponderosa;Estados Unidos
+736;Roble blanco;Estados Unidos
+737;Nogal negro;Estados Unidos
+738;Araucaria;Chile
+739;Alerce patagónico;Chile
+740;Coigüe;Chile
+741;Lenga;Argentina
+742;Quebracho colorado;Argentina
+743;Ombú;Argentina
+744;Lapacho rosado;Paraguay
+745;Palo santo;Paraguay
+746;Tajibo;Bolivia
+747;Queñua;Bolivia
+748;Árbol de la quina;Perú
+749;Algarrobo peruano;Perú
+750;Cedro andino;Ecuador
+751;Arrayán;Ecuador
+752;Palma de cera;Colombia
+753;Guayacán amarillo;Colombia
+754;Araguaney;Venezuela
+755;Samán;Venezuela
+756;Pau-brasil;Brasil
+757;Castaño de Brasil;Brasil
+758;Caucho amazónico;Brasil
+759;Ipê amarillo;Brasil
+760;Alcornoque;Portugal
+761;Olivo;España
+762;Encina;España
+763;Haya europea;Alemania
+764;Roble inglés;Reino Unido
+765;Fresno europeo;Irlanda
+766;Abedul plateado;Finlandia
+767;Abeto rojo;Noruega
+768;Pino silvestre;Suecia
+769;Tilo europeo;República Checa
+770;Castaño europeo;Italia
+771;Plátano de sombra;Francia
+772;Cedro del Líbano;Líbano
+773;Olivo de Anatolia;Turquía
+774;Cedro del Atlas;Marruecos
+775;Argán;Marruecos
+776;Baobab africano;Senegal
+777;Acacia de sombrilla;Kenia
+778;Ébano africano;Tanzania
+779;Marula;Sudáfrica
+780;Mopane;Zimbabue
+781;Baobab de Madagascar;Madagascar
+782;Sicomoro;Egipto
+783;Cedro del Himalaya;India
+784;Baniano;India
+785;Neem;India
+786;Árbol de sal;India
+787;Teca;Myanmar
+788;Dipterocarpus;Malasia
+789;Meranti rojo;Indonesia
+790;Árbol de caucho;Indonesia
+791;Bodhi;Sri Lanka
+792;Pino rojo japonés;Japón
+793;Cerezo japonés;Japón
+794;Ginkgo;China
+795;Secuoya del amanecer;China
+796;Paulownia;China
+797;Pino coreano;Corea del Sur
+798;Eucalipto azul;Australia
+799;Acacia dorada;Australia
+800;Kauri;Nueva Zelanda
+801;Guanacaste;Costa Rica
+802;Guachipelín;Costa Rica
+803;Roble sabana;Costa Rica
+804;Corteza amarilla;Costa Rica
+805;Almendro de montaña;Costa Rica
+806;Ceiba;Guatemala
+807;Matilisguate;Guatemala
+808;Pinabete;Guatemala
+809;Caoba;Belice
+810;Santa María;Belice
+811;Bálsamo;El Salvador
+812;Maquilishuat;El Salvador
+813;Pino ocote;Honduras
+814;Liquidámbar;Honduras
+815;Madroño;Nicaragua
+816;Genízaro;Nicaragua
+817;Árbol Panamá;Panamá
+818;Espavé;Panamá
+819;Palma real;Cuba
+820;Jagüey;Cuba
+821;Caoba dominicana;República Dominicana
+822;Pino criollo;República Dominicana
+823;Guayacán;Puerto Rico
+824;Ausubo;Puerto Rico
+825;Ahuehuete;México
+826;Oyamel;México
+827;Mezquite;México
+828;Copal;México
+829;Sabino;México
+830;Arce azucarero;Canadá
+831;Abeto balsámico;Canadá
+832;Cedro rojo occidental;Canadá
+833;Secuoya gigante;Estados Unidos
+834;Secuoya roja;Estados Unidos
+835;Pino ponderosa;Estados Unidos
+836;Roble blanco;Estados Unidos
+837;Nogal negro;Estados Unidos
+838;Araucaria;Chile
+839;Alerce patagónico;Chile
+840;Coigüe;Chile
+841;Lenga;Argentina
+842;Quebracho colorado;Argentina
+843;Ombú;Argentina
+844;Lapacho rosado;Paraguay
+845;Palo santo;Paraguay
+846;Tajibo;Bolivia
+847;Queñua;Bolivia
+848;Árbol de la quina;Perú
+849;Algarrobo peruano;Perú
+850;Cedro andino;Ecuador
+851;Arrayán;Ecuador
+852;Palma de cera;Colombia
+853;Guayacán amarillo;Colombia
+854;Araguaney;Venezuela
+855;Samán;Venezuela
+856;Pau-brasil;Brasil
+857;Castaño de Brasil;Brasil
+858;Caucho amazónico;Brasil
+859;Ipê amarillo;Brasil
+860;Alcornoque;Portugal
+861;Olivo;España
+862;Encina;España
+863;Haya europea;Alemania
+864;Roble inglés;Reino Unido
+865;Fresno europeo;Irlanda
+866;Abedul plateado;Finlandia
+867;Abeto rojo;Noruega
+868;Pino silvestre;Suecia
+869;Tilo europeo;República Checa
+870;Castaño europeo;Italia
+871;Plátano de sombra;Francia
+872;Cedro del Líbano;Líbano
+873;Olivo de Anatolia;Turquía
+874;Cedro del Atlas;Marruecos
+875;Argán;Marruecos
+876;Baobab africano;Senegal
+877;Acacia de sombrilla;Kenia
+878;Ébano africano;Tanzania
+879;Marula;Sudáfrica
+880;Mopane;Zimbabue
+881;Baobab de Madagascar;Madagascar
+882;Sicomoro;Egipto
+883;Cedro del Himalaya;India
+884;Baniano;India
+885;Neem;India
+886;Árbol de sal;India
+887;Teca;Myanmar
+888;Dipterocarpus;Malasia
+889;Meranti rojo;Indonesia
+890;Árbol de caucho;Indonesia
+891;Bodhi;Sri Lanka
+892;Pino rojo japonés;Japón
+893;Cerezo japonés;Japón
+894;Ginkgo;China
+895;Secuoya del amanecer;China
+896;Paulownia;China
+897;Pino coreano;Corea del Sur
+898;Eucalipto azul;Australia
+899;Acacia dorada;Australia
+900;Kauri;Nueva Zelanda
+901;Guanacaste;Costa Rica
+902;Guachipelín;Costa Rica
+903;Roble sabana;Costa Rica
+904;Corteza amarilla;Costa Rica
+905;Almendro de montaña;Costa Rica
+906;Ceiba;Guatemala
+907;Matilisguate;Guatemala
+908;Pinabete;Guatemala
+909;Caoba;Belice
+910;Santa María;Belice
+911;Bálsamo;El Salvador
+912;Maquilishuat;El Salvador
+913;Pino ocote;Honduras
+914;Liquidámbar;Honduras
+915;Madroño;Nicaragua
+916;Genízaro;Nicaragua
+917;Árbol Panamá;Panamá
+918;Espavé;Panamá
+919;Palma real;Cuba
+920;Jagüey;Cuba
+921;Caoba dominicana;República Dominicana
+922;Pino criollo;República Dominicana
+923;Guayacán;Puerto Rico
+924;Ausubo;Puerto Rico
+925;Ahuehuete;México
+926;Oyamel;México
+927;Mezquite;México
+928;Copal;México
+929;Sabino;México
+930;Arce azucarero;Canadá
+931;Abeto balsámico;Canadá
+932;Cedro rojo occidental;Canadá
+933;Secuoya gigante;Estados Unidos
+934;Secuoya roja;Estados Unidos
+935;Pino ponderosa;Estados Unidos
+936;Roble blanco;Estados Unidos
+937;Nogal negro;Estados Unidos
+938;Araucaria;Chile
+939;Alerce patagónico;Chile
+940;Coigüe;Chile
+941;Lenga;Argentina
+942;Quebracho colorado;Argentina
+943;Ombú;Argentina
+944;Lapacho rosado;Paraguay
+945;Palo santo;Paraguay
+946;Tajibo;Bolivia
+947;Queñua;Bolivia
+948;Árbol de la quina;Perú
+949;Algarrobo peruano;Perú
+950;Cedro andino;Ecuador
+951;Arrayán;Ecuador
+952;Palma de cera;Colombia
+953;Guayacán amarillo;Colombia
+954;Araguaney;Venezuela
+955;Samán;Venezuela
+956;Pau-brasil;Brasil
+957;Castaño de Brasil;Brasil
+958;Caucho amazónico;Brasil
+959;Ipê amarillo;Brasil
+960;Alcornoque;Portugal
+961;Olivo;España
+962;Encina;España
+963;Haya europea;Alemania
+964;Roble inglés;Reino Unido
+965;Fresno europeo;Irlanda
+966;Abedul plateado;Finlandia
+967;Abeto rojo;Noruega
+968;Pino silvestre;Suecia
+969;Tilo europeo;República Checa
+970;Castaño europeo;Italia
+971;Plátano de sombra;Francia
+972;Cedro del Líbano;Líbano
+973;Olivo de Anatolia;Turquía
+974;Cedro del Atlas;Marruecos
+975;Argán;Marruecos
+976;Baobab africano;Senegal
+977;Acacia de sombrilla;Kenia
+978;Ébano africano;Tanzania
+979;Marula;Sudáfrica
+980;Mopane;Zimbabue
+981;Baobab de Madagascar;Madagascar
+982;Sicomoro;Egipto
+983;Cedro del Himalaya;India
+984;Baniano;India
+985;Neem;India
+986;Árbol de sal;India
+987;Teca;Myanmar
+988;Dipterocarpus;Malasia
+989;Meranti rojo;Indonesia
+990;Árbol de caucho;Indonesia
+991;Bodhi;Sri Lanka
+992;Pino rojo japonés;Japón
+993;Cerezo japonés;Japón
+994;Ginkgo;China
+995;Secuoya del amanecer;China
+996;Paulownia;China
+997;Pino coreano;Corea del Sur
+998;Eucalipto azul;Australia
+999;Acacia dorada;Australia
+1000;Kauri;Nueva Zelanda

@@ -223,9 +223,89 @@ def mostrar_menu():
     print("7. Mostrar lista doblemente enlazada de forma recursiva")
     print("8. Salir")
 
+def suma_regresiva(n,sumatoria):
+    if n == 0:
+        print(sumatoria)
+        return
+    sumatoria+=n
+    suma_regresiva(n - 1,sumatoria)
+
+def factorial_regresivo (n, factorial):
+    if n == 0:
+        return
+    print(factorial)
+    factorial *=n
+    factorial_regresivo(n - 1, factorial)
+
+def queHace1(lista, posicion, valor):
+    if posicion == len(lista):
+        return False
+    if lista[posicion] == valor:
+        return True
+    return queHace(lista, posicion + 1, valor)
+
+
+def queHace2(palabra):
+    if len(palabra) <= 1:
+        return palabra
+    print(palabra[1:]+ palabra[0])
+    return queHace(palabra[1:]) + palabra[0]
+
+def mayor(lista, posicion):
+    if posicion == len(lista) - 1:
+        return lista[posicion]
+    mayor_resto = mayor(lista, posicion + 1)
+    if lista[posicion] > mayor_resto:
+        return lista[posicion]
+    return mayor_resto
+
+def fibonacci_recursivo (n):
+    if n <= 0:
+         return 0
+    elif n == 1:
+         return 1
+    else:
+          return fibonacci_recursivo(n - 1) + fibonacci_recursivo(n - 2)
+
+def sumar_lista(lista, posicion):
+    if posicion == len(lista):
+        return 0
+    return lista[posicion] + sumar_lista(lista, posicion + 1)
+
+def palindromo(datos,posicion):
+    if(posicion >= len(datos)):
+        return True
+    if(datos[posicion] != datos[len(datos)-1-posicion]):
+        return False
+    return palindromo(datos,posicion+1)
+
+def queHace3(lista, posicion): #invierte la lista
+    if posicion == len(lista):
+        return
+    print(lista[posicion])
+    queHace3(lista, posicion + 1)
+    print(lista[posicion])
+
+
+
+
+
+
 
 def main():
     lista = ListaDobleProductos()
+    #suma_regresiva(5,0)
+    #factorial_regresivo(5,1)
+    #print(queHace('Casa'))
+    #datos = [15, 80, 23, 91, 45, 67]
+    #print(mayor(datos, 0))
+    #print(fibonacci_recursivo(5))
+    #numeros = [10, 20, 30, 40, 50]
+    #print(sumar_lista(numeros, 0))
+    #print(palindromo("reconocer",0))
+    datos = ['A', 'B', 'C', 'D']
+    queHace3(datos, 0)
+
 
     while True:
         mostrar_menu()

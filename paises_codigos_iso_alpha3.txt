@@ -1,0 +1,250 @@
+País_o_territorio;Código_ISO_Alpha3
+Afganistán;AFG
+Albania;ALB
+Alemania;DEU
+Andorra;AND
+Angola;AGO
+Anguila;AIA
+Antigua y Barbuda;ATG
+Antártida;ATA
+Arabia Saudí;SAU
+Argelia;DZA
+Argentina;ARG
+Armenia;ARM
+Aruba;ABW
+Australia;AUS
+Austria;AUT
+Azerbaiyán;AZE
+Bahamas;BHS
+Bangladés;BGD
+Barbados;BRB
+Baréin;BHR
+Belice;BLZ
+Benín;BEN
+Bermudas;BMU
+Bielorrusia;BLR
+Bolivia;BOL
+Bosnia y Herzegovina;BIH
+Botsuana;BWA
+Brasil;BRA
+Brunéi;BRN
+Bulgaria;BGR
+Burkina Faso;BFA
+Burundi;BDI
+Bután;BTN
+Bélgica;BEL
+Cabo Verde;CPV
+Camboya;KHM
+Camerún;CMR
+Canadá;CAN
+Caribe neerlandés;BES
+Catar;QAT
+Chad;TCD
+Chequia;CZE
+Chile;CHL
+China;CHN
+Chipre;CYP
+Ciudad del Vaticano;VAT
+Colombia;COL
+Comoras;COM
+Congo;COG
+Corea del Norte;PRK
+Corea del Sur;KOR
+Costa Rica;CRI
+Croacia;HRV
+Cuba;CUB
+Curazao;CUW
+Côte d’Ivoire;CIV
+Dinamarca;DNK
+Dominica;DMA
+Ecuador;ECU
+Egipto;EGY
+El Salvador;SLV
+Emiratos Árabes Unidos;ARE
+Eritrea;ERI
+Eslovaquia;SVK
+Eslovenia;SVN
+España;ESP
+Estados Unidos;USA
+Estonia;EST
+Esuatini;SWZ
+Etiopía;ETH
+Filipinas;PHL
+Finlandia;FIN
+Fiyi;FJI
+Francia;FRA
+Gabón;GAB
+Gambia;GMB
+Georgia;GEO
+Ghana;GHA
+Gibraltar;GIB
+Granada;GRD
+Grecia;GRC
+Groenlandia;GRL
+Guadalupe;GLP
+Guam;GUM
+Guatemala;GTM
+Guayana Francesa;GUF
+Guernesey;GGY
+Guinea;GIN
+Guinea Ecuatorial;GNQ
+Guinea-Bisáu;GNB
+Guyana;GUY
+Haití;HTI
+Honduras;HND
+Hungría;HUN
+India;IND
+Indonesia;IDN
+Irak;IRQ
+Irlanda;IRL
+Irán;IRN
+Isla Bouvet;BVT
+Isla de Man;IMN
+Isla de Navidad;CXR
+Isla Norfolk;NFK
+Islandia;ISL
+Islas Aland;ALA
+Islas Caimán;CYM
+Islas Cocos;CCK
+Islas Cook;COK
+Islas Feroe;FRO
+Islas Georgia del Sur y Sandwich del Sur;SGS
+Islas Heard y McDonald;HMD
+Islas Malvinas;FLK
+Islas Marianas del Norte;MNP
+Islas Marshall;MHL
+Islas menores alejadas de EE. UU.;UMI
+Islas Pitcairn;PCN
+Islas Salomón;SLB
+Islas Turcas y Caicos;TCA
+Islas Vírgenes Británicas;VGB
+Islas Vírgenes de EE. UU.;VIR
+Israel;ISR
+Italia;ITA
+Jamaica;JAM
+Japón;JPN
+Jersey;JEY
+Jordania;JOR
+Kazajistán;KAZ
+Kenia;KEN
+Kirguistán;KGZ
+Kiribati;KIR
+Kuwait;KWT
+Laos;LAO
+Lesoto;LSO
+Letonia;LVA
+Liberia;LBR
+Libia;LBY
+Liechtenstein;LIE
+Lituania;LTU
+Luxemburgo;LUX
+Líbano;LBN
+Macedonia del Norte;MKD
+Madagascar;MDG
+Malasia;MYS
+Malaui;MWI
+Maldivas;MDV
+Mali;MLI
+Malta;MLT
+Marruecos;MAR
+Martinica;MTQ
+Mauricio;MUS
+Mauritania;MRT
+Mayotte;MYT
+Micronesia;FSM
+Moldavia;MDA
+Mongolia;MNG
+Montenegro;MNE
+Montserrat;MSR
+Mozambique;MOZ
+Myanmar (Birmania);MMR
+México;MEX
+Mónaco;MCO
+Namibia;NAM
+Nauru;NRU
+Nepal;NPL
+Nicaragua;NIC
+Nigeria;NGA
+Niue;NIU
+Noruega;NOR
+Nueva Caledonia;NCL
+Nueva Zelanda;NZL
+Níger;NER
+Omán;OMN
+Pakistán;PAK
+Palaos;PLW
+Panamá;PAN
+Papúa Nueva Guinea;PNG
+Paraguay;PRY
+Países Bajos;NLD
+Perú;PER
+Polinesia Francesa;PYF
+Polonia;POL
+Portugal;PRT
+Puerto Rico;PRI
+RAE de Hong Kong (China);HKG
+RAE de Macao (China);MAC
+Reino Unido;GBR
+República Centroafricana;CAF
+República Democrática del Congo;COD
+República Dominicana;DOM
+Reunión;REU
+Ruanda;RWA
+Rumanía;ROU
+Rusia;RUS
+Samoa;WSM
+Samoa Americana;ASM
+San Bartolomé;BLM
+San Cristóbal y Nieves;KNA
+San Marino;SMR
+San Martín;MAF
+San Pedro y Miquelón;SPM
+San Vicente y las Granadinas;VCT
+Santa Elena;SHN
+Santa Lucía;LCA
+Santo Tomé y Príncipe;STP
+Senegal;SEN
+Serbia;SRB
+Seychelles;SYC
+Sierra Leona;SLE
+Singapur;SGP
+Sint Maarten;SXM
+Siria;SYR
+Somalia;SOM
+Sri Lanka;LKA
+Sudáfrica;ZAF
+Sudán;SDN
+Sudán del Sur;SSD
+Suecia;SWE
+Suiza;CHE
+Surinam;SUR
+Svalbard y Jan Mayen;SJM
+Sáhara Occidental;ESH
+Tailandia;THA
+Taiwán;TWN
+Tanzania;TZA
+Tayikistán;TJK
+Territorio Británico del Océano Índico;IOT
+Territorios Australes Franceses;ATF
+Territorios Palestinos;PSE
+Timor-Leste;TLS
+Togo;TGO
+Tokelau;TKL
+Tonga;TON
+Trinidad y Tobago;TTO
+Turkmenistán;TKM
+Turquía;TUR
+Tuvalu;TUV
+Túnez;TUN
+Ucrania;UKR
+Uganda;UGA
+Uruguay;URY
+Uzbekistán;UZB
+Vanuatu;VUT
+Venezuela;VEN
+Vietnam;VNM
+Wallis y Futuna;WLF
+Yemen;YEM
+Yibuti;DJI
+Zambia;ZMB
+Zimbabue;ZWE

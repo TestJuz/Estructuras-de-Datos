@@ -1,0 +1,11 @@
+# Árbol general serializado automáticamente
+ROOT,proyecto
+proyecto,src
+src,main.py
+src,utils
+utils,helpers.py
+utils,constants.py
+proyecto,docs
+docs,README.md
+proyecto,tests
+tests,test_main.py

@@ -1,0 +1,2 @@
+# BST serializado por niveles (preserva la forma exacta)
+8,3,14,1,6,13,-,-,-,4,7

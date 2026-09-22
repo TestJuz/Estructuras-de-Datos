@@ -1,0 +1,2 @@
+# Árbol binario de ejemplo (recorrido por niveles, "-" = sin hijo)
+8,3,10,1,6,-,14
