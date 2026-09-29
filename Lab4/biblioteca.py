@@ -33,8 +33,7 @@ def cargar_catalogo(ruta):
             raiz = insertar(raiz, int(codigo), titulo, int(disponibles))
     return raiz
  
-raiz = cargar_catalogo('catalogo_libros.txt')
-print('Raíz:', raiz.codigo)  # 410
+
 
 def buscar(nodo, codigo):
     if nodo is None or nodo.codigo == codigo:
@@ -49,11 +48,9 @@ def listado_inorden(nodo):
     return (listado_inorden(nodo.izquierdo)
             + [(nodo.codigo, nodo.titulo, nodo.disponibles)]
             + listado_inorden(nodo.derecho))
+            
  
-print('Libro 330:', buscar(raiz, 330).titulo)
-print('Código 999 registrado:', buscar(raiz, 999) is not None)
-for libro in listado_inorden(raiz):
-    print(libro)
+
 
 def prestar(raiz, codigo):
     libro = buscar(raiz, codigo)
@@ -109,23 +106,41 @@ def procesar_movimientos(raiz, ruta):
     return aceptados, rechazados
 
 
+raiz = cargar_catalogo('catalogo_libros.txt')
 
 print("-----------------------------------------------")
-print("Primera seccion")
+print("Listado de libros")
 print("-----------------------------------------------")
-print(prestar(raiz, 330))  # True: pasa de 2 a 1
-print(prestar(raiz, 330))  # True: pasa de 1 a 0
-print(prestar(raiz, 330))  # False: no hay ejemplares
-print(prestar(raiz, 999))  # False: código inexistente
-print(buscar(raiz, 330).disponibles)  # 0
+for libro in listado_inorden(raiz):
+    print(libro)
+
+print('Raíz:', raiz.codigo)  # 410
+
+
+print("-----------------------------------------------")
+print("Listado inorden")
+print("-----------------------------------------------")
+print(listado_inorden(raiz))
+
+
+print("-----------------------------------------------")
+print("Prestamo y Busqueda")
+print("-----------------------------------------------")
+print("Prestamos fue posible: " + str(prestar(raiz, 330)))  # True: pasa de 2 a 1
+print("Prestamos fue posible: " + str(prestar(raiz, 330)))   # True: pasa de 1 a 0
+print("Prestamos fue posible: " + str(prestar(raiz, 330)))   # False: no hay ejemplares
+print("Prestamos fue posible: " + str(prestar(raiz, 999)))   # False: código inexistente
+print("Libros con ID 330 disponibles: " + str(buscar(raiz, 330).disponibles) )  # 0
+print('Libro busqueda por titulo:', buscar(raiz, 330).titulo)
+print('Libros con ID 999 disponibles:', buscar(raiz, 999) is not None)
 print("\n")
 
 print("-----------------------------------------------")
-print("Segunda seccion")
+print("Devolucion")
 print("-----------------------------------------------")
-print(devolver(raiz, 580))  # True: pasa de 1 a 2
-print(devolver(raiz, 999))  # False: catálogo sin cambios
-print(buscar(raiz, 580).disponibles)  # 2
+print("Catalogo tiene cambios: " + str(devolver(raiz, 580)))  # True: pasa de 1 a 2
+print("Catalogo tiene cambios: " + str(devolver(raiz, 999)))  # False: catálogo sin cambios
+print("Libros con ID 580 disponibles: " + str(buscar(raiz, 580).disponibles))  # 2
 print("\n")
 
 print("-----------------------------------------------")
@@ -139,11 +154,11 @@ print("-----------------------------------------------")
 print("Insertar")
 print("-----------------------------------------------")
 print("Pre insertar:")
-print(total_disponibles(raiz))
+print("Total disponible pre insertar: " + str(total_disponibles(raiz)))
 raiz = insertar(raiz, 520, 'Seguridad informática', 2)
 print([codigo for codigo, _, _ in listado_inorden(raiz)])
 print("Post insertar:")
-print(total_disponibles(raiz))
+print("Total disponible post insertar: " + str(total_disponibles(raiz)))
 print("\n")
 
 print("-----------------------------------------------")
@@ -154,7 +169,7 @@ try:
 except ValueError as e:
     print(f'Error: {e}')
 print([codigo for codigo, _, _ in listado_inorden(raiz)])
-print(total_disponibles(raiz))
+print("Total disponible: " + str(total_disponibles(raiz)))
 print("\n")
 
 print("-----------------------------------------------")
