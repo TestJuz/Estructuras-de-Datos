@@ -128,14 +128,14 @@ print(buscar(raiz, 580).disponibles)  # 2
 print("\n")
 
 print("-----------------------------------------------")
-print("Tercera seccion")
+print("Reporte Recursivo")
 print("-----------------------------------------------")
 print('Ejemplares disponibles:', total_disponibles(raiz))
 print('Códigos de bajo inventario:', bajo_inventario(raiz))
 print("\n")
 
 print("-----------------------------------------------")
-print("Cuarta seccion")
+print("Insertar")
 print("-----------------------------------------------")
 raiz = insertar(raiz, 520, 'Seguridad informática', 2)
 print([codigo for codigo, _, _ in listado_inorden(raiz)])
