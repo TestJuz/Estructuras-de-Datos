@@ -135,7 +135,7 @@ print("-----------------------------------------------")
 print("Busqueda")
 print("-----------------------------------------------")
 print("Libros con ID 330 disponibles: " + str(buscar(raiz, 330).disponibles) )  # 0
-print('Libro busqueda por titulo:', buscar(raiz, 330).titulo)
+print('Titulo del libro 330:', buscar(raiz, 330).titulo)
 print('Libros con ID 999 disponibles:', buscar(raiz, 999) is not None)
 print("\n")
 
