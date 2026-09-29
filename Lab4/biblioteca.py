@@ -124,12 +124,16 @@ print(listado_inorden(raiz))
 
 
 print("-----------------------------------------------")
-print("Prestamo y Busqueda")
+print("Prestamo")
 print("-----------------------------------------------")
 print("Prestamos fue posible: " + str(prestar(raiz, 330)))  # True: pasa de 2 a 1
 print("Prestamos fue posible: " + str(prestar(raiz, 330)))   # True: pasa de 1 a 0
 print("Prestamos fue posible: " + str(prestar(raiz, 330)))   # False: no hay ejemplares
 print("Prestamos fue posible: " + str(prestar(raiz, 999)))   # False: código inexistente
+
+print("-----------------------------------------------")
+print("Busqueda")
+print("-----------------------------------------------")
 print("Libros con ID 330 disponibles: " + str(buscar(raiz, 330).disponibles) )  # 0
 print('Libro busqueda por titulo:', buscar(raiz, 330).titulo)
 print('Libros con ID 999 disponibles:', buscar(raiz, 999) is not None)
